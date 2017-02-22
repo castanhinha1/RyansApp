@@ -11,7 +11,7 @@
     package="com.parse.starter">
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="14"
         android:targetSdkVersion="22"
         tools:overrideLibrary="com.facebook" />
 

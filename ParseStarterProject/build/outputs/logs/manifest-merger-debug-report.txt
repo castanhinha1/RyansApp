@@ -28,7 +28,7 @@ MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Cast
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:9-34
+		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:9-35
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET

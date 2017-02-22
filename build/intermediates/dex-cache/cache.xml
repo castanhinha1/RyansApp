@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="d8c259d35b92cc5f8408af6a70f186a0c58ec2c0">
+        sha1="975133d0da658a5323b5180cd06e31ebc5c94b38">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b844eee3453e314e4be164f6acf5c90763602fdb\classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="9c6fd69af1a0ffb31a23fcb26beaaa8edf0a3cff">
+        sha1="b34cbd9e4a3980e857c09bb23dc1462469fa137e">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_06a6b63f4e82d5d279b0e6fdc3ed410259af2405\classes.dex" />
     </item>
     <item
