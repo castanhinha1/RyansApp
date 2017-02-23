@@ -3,6 +3,7 @@ package com.parse.starter.Controllers;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.parse.ParseUser;
@@ -22,6 +23,34 @@ public class NavigationController extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), LoginController.class);
         startActivity(intent);
 
+    }
+
+    public void onHomeButtonClick(View view) {
+        Log.i("Info", "Home Button Clicked");
+    }
+
+    public void onProfileButtonClick(View view) {
+        Log.i("Info", "Profile Button Clicked");
+    }
+
+    public void onCurrentDetailsButtonClick(View view) {
+        Log.i("Info", "Current Details Button Clicked");
+    }
+
+    public void onNewGoalButtonClick(View view) {
+        Log.i("Info", "New Goal Button Clicked");
+    }
+
+    public void onFindTrainerButtonClick(View view) {
+        Log.i("Info", "Find Trainer Button Clicked");
+    }
+
+    public void onCalendarButtonClick(View view) {
+        Log.i("Info", "Calendar Button Button Clicked");
+    }
+
+    public void onSettingsButtonClick(View view) {
+        Log.i("Info", "Settings Button Clicked");
     }
 
 }

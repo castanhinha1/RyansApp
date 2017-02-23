@@ -53,7 +53,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Controllers.SignUpController" />
-        <activity android:name=".Controllers.NavigationController"></activity>
+        <activity android:name=".Controllers.NavigationController" />
+        <activity android:name=".Controllers.CurrentDetailsController"></activity>
     </application>
 
 </manifest>
