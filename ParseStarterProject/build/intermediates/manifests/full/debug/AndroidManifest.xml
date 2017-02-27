@@ -55,6 +55,8 @@
         </activity>
         <activity android:name="com.parse.starter.Controllers.SignUpController" />
         <activity android:name="com.parse.starter.Controllers.NavigationController" />
+        <activity android:name="com.parse.starter.Controllers.CurrentDetailsController" />
+        <activity android:name="com.parse.starter.Controllers.HomeController" />
     </application>
 
 </manifest>
