@@ -35,6 +35,8 @@ public class NavigationController extends AppCompatActivity {
 
     public void onCurrentDetailsButtonClick(View view) {
         Log.i("Info", "Current Details Button Clicked");
+        Intent intent = new Intent(getApplicationContext(), CurrentDetailsController.class);
+        startActivity(intent);
     }
 
     public void onNewGoalButtonClick(View view) {

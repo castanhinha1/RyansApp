@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_current_details.xml",
+        "source": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\src\\main\\res\\layout\\activity_current_details.xml"
+    },
+    {
         "merged": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -158,6 +162,10 @@
     {
         "merged": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
         "source": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.5.0\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
         "merged": "C:\\Users\\Dylan Castanhinha\\Documents\\Parse-Starter-Project-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
