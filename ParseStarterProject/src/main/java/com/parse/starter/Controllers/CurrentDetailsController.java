@@ -16,17 +16,11 @@ import static android.util.Log.d;
 
 public class CurrentDetailsController extends AppCompatActivity {
 
-    private RadioGroup radioGroup;
-    private RadioGroup radioGroup2;
-    private RadioButton buttonVeryLight;
-    private RadioButton buttonLight;
-    private RadioButton buttonModerate;
-    private RadioButton buttonHeavy;
-    private RadioButton buttonVeryLHeavy;
-    private RadioButton maleButton;
-    private RadioButton femaleButton;
+
     EditText weightTF;
     EditText bodyFatTF;
+    RadioGroup radioGroup;
+    RadioGroup radioGroup2;
 
     int bodyWeightInLB;
     double bodyWeightInKG;
@@ -45,8 +39,8 @@ public class CurrentDetailsController extends AppCompatActivity {
 
         weightTF = (EditText) findViewById(R.id.weightTextField);
         bodyFatTF = (EditText) findViewById(R.id.bodyFatTextField);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -77,7 +71,6 @@ public class CurrentDetailsController extends AppCompatActivity {
                 switch (checkedId) {
                     case R.id.male:
                         sexFactor = 1.0;
-                        Log.i("AppInfo", String.valueOf(sexFactor));
                         break;
                     case R.id.female:
                         sexFactor = 0.9;
@@ -91,20 +84,22 @@ public class CurrentDetailsController extends AppCompatActivity {
 
     public void calculateBMR(View view){
 
-        convertWeightToKG();
-        convertBodyFatToDouble();
-        calculateEquation192();
-        calculateLeanFactorMultiplier();
-
-        BMR = leanFactorMultiplier * equation192;
-        calculateDailyCaloricExpenditures(BMR);
+        if(weightTF != null && bodyFatTF != null && radioGroup.getCheckedRadioButtonId() != -1 && radioGroup2.getCheckedRadioButtonId() != -1) {
+            convertWeightToKG();
+            convertBodyFatToDouble();
+            calculateEquation192();
+            calculateLeanFactorMultiplier();
+            BMR = leanFactorMultiplier * equation192;
+            calculateDailyCaloricExpenditures(BMR);
+        } else {
+            Log.i("Info", "Need to make selection");
+        }
     }
 
     private void calculateDailyCaloricExpenditures(double bmr) {
         dailyCarloricExpenditure = bmr * dailyActivityMultplier;
         int caloriesInt = ((int) dailyCarloricExpenditure);
         String caloriesString = String.valueOf(caloriesInt);
-        //Log.i("Calories", String.valueOf(calories));
         Intent intent = new Intent(getBaseContext(), HomeController.class);
         intent.putExtra("calories", caloriesString);
         startActivity(intent);
@@ -154,7 +149,6 @@ public class CurrentDetailsController extends AppCompatActivity {
     private void calculateEquation192() {
 
         equation192 = sexFactor * bodyWeightInKG * 24;
-        Log.i("Lean Factor Info", String.valueOf(leanFactorMultiplier));
 
     }
 
@@ -163,7 +157,6 @@ public class CurrentDetailsController extends AppCompatActivity {
         bodyWeightInLB = Integer.parseInt(weightTF.getText().toString());
         double weightLB = (double) bodyWeightInLB;
         bodyWeightInKG = (weightLB / 2.2);
-        Log.i("Info", String.valueOf(bodyWeightInKG));
 
     }
 
