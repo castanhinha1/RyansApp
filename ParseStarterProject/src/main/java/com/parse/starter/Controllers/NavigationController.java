@@ -32,7 +32,8 @@ public class NavigationController extends AppCompatActivity {
     }
 
     public void onProfileButtonClick(View view) {
-        Log.i("Info", "Profile Button Clicked");
+        Intent intent = new Intent(getApplicationContext(), YourProfile.class);
+        startActivity(intent);
     }
 
     public void onCurrentDetailsButtonClick(View view) {
