@@ -6,22 +6,51 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.starter.R;
+
+import java.util.List;
 
 public class HomeController extends AppCompatActivity {
 
     String calories;
     TextView caloriesTV;
+    int intCalories;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        caloriesTV = (TextView) findViewById(R.id.dailycalories);
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Calories");
+        query.whereEqualTo("user", ParseUser.getCurrentUser());
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
 
-        calories = getIntent().getStringExtra("calories");
-        Log.i("AppInfo", calories);
+                    intCalories = (int) objects.get(0).get("calories");
+                    setTextView(intCalories);
+
+                } else {
+
+                    Log.i("AppInfo", "Something went wrong");
+
+                }
+            }
+        });
+
+    }
+
+    public void setTextView(int calories){
+
+        caloriesTV = (TextView) findViewById(R.id.dailycalories);
         caloriesTV.setText("You should be intaking "+calories +" calories per day.");
+
     }
 }

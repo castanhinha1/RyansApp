@@ -55,7 +55,8 @@
         <activity android:name=".Controllers.SignUpController" />
         <activity android:name=".Controllers.NavigationController" />
         <activity android:name=".Controllers.CurrentDetailsController" />
-        <activity android:name=".Controllers.HomeController"></activity>
+        <activity android:name=".Controllers.HomeController" />
+        <activity android:name=".Controllers.YourProfile"></activity>
     </application>
 
 </manifest>

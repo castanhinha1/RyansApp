@@ -26,7 +26,9 @@ public class NavigationController extends AppCompatActivity {
     }
 
     public void onHomeButtonClick(View view) {
-        Log.i("Info", "Home Button Clicked");
+        //Log.i("Info", "Home Button Clicked");
+        Intent intent = new Intent(getApplicationContext(), HomeController.class);
+        startActivity(intent);
     }
 
     public void onProfileButtonClick(View view) {

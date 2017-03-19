@@ -10,7 +10,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.starter.R;
+
+import java.util.List;
 
 import static android.util.Log.d;
 
@@ -100,9 +107,40 @@ public class CurrentDetailsController extends AppCompatActivity {
         dailyCarloricExpenditure = bmr * dailyActivityMultplier;
         int caloriesInt = ((int) dailyCarloricExpenditure);
         String caloriesString = String.valueOf(caloriesInt);
-        Intent intent = new Intent(getBaseContext(), HomeController.class);
-        intent.putExtra("calories", caloriesString);
-        startActivity(intent);
+        saveToParse(caloriesInt);
+    }
+
+    private void saveToParse(final int calories){
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Calories");
+        query.whereEqualTo("user", ParseUser.getCurrentUser());
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null && objects.isEmpty() == false) {
+
+                    ParseObject object = objects.get(0);
+                    object.put("calories", calories);
+                    object.saveInBackground();
+                    Intent intent = new Intent(getBaseContext(), HomeController.class);
+                    startActivity(intent);
+
+                } else if (objects.isEmpty() && e == null){
+                    ParseObject totalCalories = new ParseObject("Calories");
+                    totalCalories.put("calories", calories);
+                    totalCalories.put("user", ParseUser.getCurrentUser());
+                    totalCalories.saveInBackground();
+                    Intent intent = new Intent(getBaseContext(), HomeController.class);
+                    startActivity(intent);
+                }
+                else {
+
+                    Log.i("AppInfo", "Something went wrong");
+
+                }
+            }
+        });
+
     }
 
     private void calculateLeanFactorMultiplier() {
