@@ -15,7 +15,7 @@
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"></ConfigClasses.ProfilePictureView>
+        android:layout_marginTop="30dp"></ConfigClasses.ProfilePictureView>
 
     <TextView
         android:text="Name"
@@ -26,7 +26,20 @@
         android:layout_marginTop="12dp"
         android:id="@+id/nameTV"
         android:textSize="20sp"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/locationTV"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed" />
 
     <Button
         android:text="Logout"
@@ -38,6 +51,20 @@
         android:onClick="logoutButtonClicked"
         android:textColor="@android:color/white"
         android:background="@color/com_facebook_blue" />
+
+    <CheckBox
+        android:text="Trainer?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationTV"
+        android:layout_marginTop="13dp"
+        android:id="@+id/trainerCheckBox"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:buttonTint="#FFF"
+        android:checked="false"
+        android:layout_marginLeft="125dp" />
 
 </RelativeLayout>
 

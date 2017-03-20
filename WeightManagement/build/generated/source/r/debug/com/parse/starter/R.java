@@ -1765,7 +1765,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c004e;
         public static final int action_mode_bar_stub=0x7f0c004d;
         public static final int action_mode_close_button=0x7f0c0036;
-        public static final int action_settings=0x7f0c009c;
+        public static final int action_settings=0x7f0c009e;
         public static final int activity_chooser_view_content=0x7f0c0037;
         public static final int activity_current_details=0x7f0c0060;
         public static final int activity_home=0x7f0c006e;
@@ -1835,8 +1835,9 @@ containing a value of this type.
         public static final int line3=0x7f0c0095;
         public static final int listMode=0x7f0c0009;
         public static final int list_item=0x7f0c003b;
+        public static final int locationTV=0x7f0c009b;
         public static final int loginbutton=0x7f0c0080;
-        public static final int logoutButton=0x7f0c009b;
+        public static final int logoutButton=0x7f0c009c;
         public static final int male=0x7f0c0065;
         public static final int media_actions=0x7f0c008f;
         public static final int messenger_send_button=0x7f0c008b;
@@ -1897,6 +1898,7 @@ containing a value of this type.
         public static final int title_template=0x7f0c0040;
         public static final int top=0x7f0c002b;
         public static final int topPanel=0x7f0c003f;
+        public static final int trainerCheckBox=0x7f0c009d;
         public static final int trainerbutton=0x7f0c0078;
         public static final int unknown=0x7f0c0025;
         public static final int up=0x7f0c0008;

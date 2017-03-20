@@ -58,6 +58,7 @@ public class LoginController extends ActionBarActivity {
     public static final List<String> mPermissions = new ArrayList<String>() {{
         add("public_profile");
         add("email");
+        add("user_location");
     }};
 
     @Override

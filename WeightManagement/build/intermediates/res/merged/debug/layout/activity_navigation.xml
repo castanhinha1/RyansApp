@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.parse.starter.Controllers.NavigationController"
+    tools:context="com.parse.starter.ViewControllers.NavigationController"
     android:background="#3a8f3e">
 
     <TextView
