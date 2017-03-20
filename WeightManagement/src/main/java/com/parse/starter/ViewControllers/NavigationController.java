@@ -47,7 +47,8 @@ public class NavigationController extends AppCompatActivity {
     }
 
     public void onFindTrainerButtonClick(View view) {
-        Log.i("Info", "Find Trainer Button Clicked");
+        Intent intent = new Intent(getApplicationContext(), TrainerView.class);
+        startActivity(intent);
     }
 
     public void onCalendarButtonClick(View view) {

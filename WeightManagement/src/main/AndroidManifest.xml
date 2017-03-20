@@ -56,7 +56,9 @@
         <activity android:name=".ViewControllers.NavigationController" />
         <activity android:name=".ViewControllers.CurrentDetailsController" />
         <activity android:name=".ViewControllers.HomeController" />
-        <activity android:name=".ViewControllers.YourProfile"></activity>
+        <activity android:name=".ViewControllers.YourProfile" />
+        <activity android:name=".ViewControllers.TrainerView" />
+        <activity android:name=".ViewControllers.AddClient"></activity>
     </application>
 
 </manifest>
