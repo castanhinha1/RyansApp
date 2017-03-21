@@ -18,7 +18,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.starter.R;
 
-import ConfigClasses.CustomList;
+import ConfigClasses.CurrentClientsCustomList;
 
 public class TrainerView extends AppCompatActivity {
 
@@ -26,17 +26,17 @@ public class TrainerView extends AppCompatActivity {
 
     private ListView listView;
     private String names[] = {
-            "HTML",
-            "CSS",
-            "Java Script",
-            "Wordpress"
+            "Client 1",
+            "Client 2",
+            "Client 3",
+            "Client 4"
     };
 
     private String desc[] = {
-            "The Powerful Hypter Text Markup Language 5",
-            "Cascading Style Sheets",
-            "Code with Java Script",
-            "Manage your content with Wordpress"
+            "Location 1",
+            "Location 2",
+            "Location 3",
+            "Location 4"
     };
 
 
@@ -47,9 +47,9 @@ public class TrainerView extends AppCompatActivity {
 
         getUserType();
         labelTV = (TextView) findViewById(R.id.clientsTextView);
-        CustomList customList = new CustomList(this, names, desc);
+        CurrentClientsCustomList customList = new CurrentClientsCustomList(this, names, desc);
 
-        listView = (ListView) findViewById(R.id.clientListView);
+        listView = (ListView) findViewById(R.id.ClientsListView);
         listView.setAdapter(customList);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -105,7 +105,7 @@ public class TrainerView extends AppCompatActivity {
 
     public void addNewClient(View view) {
 
-        Intent intent = new Intent(getApplicationContext(), AddClient.class);
+        Intent intent = new Intent(getApplicationContext(), NewClient.class);
         startActivity(intent);
 
     }

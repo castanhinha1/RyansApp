@@ -152,7 +152,7 @@ activity#com.parse.starter.ViewControllers.TrainerView
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:60:9-65
 	android:name
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:60:19-62
-activity#com.parse.starter.ViewControllers.AddClient
+activity#com.parse.starter.ViewControllers.NewClient
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:61:9-72
 	android:name
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:61:19-60

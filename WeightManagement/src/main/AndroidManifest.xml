@@ -58,7 +58,7 @@
         <activity android:name=".ViewControllers.HomeController" />
         <activity android:name=".ViewControllers.YourProfile" />
         <activity android:name=".ViewControllers.TrainerView" />
-        <activity android:name=".ViewControllers.AddClient"></activity>
+        <activity android:name=".ViewControllers.NewClient"></activity>
     </application>
 
 </manifest>
