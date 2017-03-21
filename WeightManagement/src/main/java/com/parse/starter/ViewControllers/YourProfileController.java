@@ -27,7 +27,7 @@ import org.json.JSONObject;
 import ConfigClasses.ProfilePictureView;
 
 
-public class YourProfile extends AppCompatActivity {
+public class YourProfileController extends AppCompatActivity {
 
     TextView nameTV;
     TextView locationTV;
@@ -39,7 +39,7 @@ public class YourProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.your_profile);
+        setContentView(R.layout.activity_your_profile);
 
         profilePictureView = (ProfilePictureView) findViewById(R.id.profile_picture);
         profilePictureView.setProfileId(Profile.getCurrentProfile().getId());

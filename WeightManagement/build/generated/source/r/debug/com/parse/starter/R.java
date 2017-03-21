@@ -2325,15 +2325,15 @@ containing a value of this type.
         public static final int com_facebook_activity_layout=0x7f040020;
         public static final int com_facebook_login_fragment=0x7f040021;
         public static final int com_facebook_tooltip_bubble=0x7f040022;
-        public static final int current_clients_list_layout=0x7f040023;
-        public static final int login_view=0x7f040024;
+        public static final int list_layout_current_clients =0x7f040023;
+        public static final int activity_login_view =0x7f040024;
         public static final int messenger_button_send_blue_large=0x7f040025;
         public static final int messenger_button_send_blue_round=0x7f040026;
         public static final int messenger_button_send_blue_small=0x7f040027;
         public static final int messenger_button_send_white_large=0x7f040028;
         public static final int messenger_button_send_white_round=0x7f040029;
         public static final int messenger_button_send_white_small=0x7f04002a;
-        public static final int new_client_list_layout=0x7f04002b;
+        public static final int list_layout_new_client =0x7f04002b;
         public static final int notification_action=0x7f04002c;
         public static final int notification_action_tombstone=0x7f04002d;
         public static final int notification_media_action=0x7f04002e;
@@ -2353,8 +2353,8 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f04003c;
         public static final int select_dialog_singlechoice_material=0x7f04003d;
         public static final int support_simple_spinner_dropdown_item=0x7f04003e;
-        public static final int trainer_view=0x7f04003f;
-        public static final int your_profile=0x7f040040;
+        public static final int activity_trainer_view =0x7f04003f;
+        public static final int activity_your_profile =0x7f040040;
     }
     public static final class menu {
         public static final int menu_main=0x7f0e0000;

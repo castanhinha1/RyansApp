@@ -18,7 +18,7 @@ public class CurrentClientsCustomList extends ArrayAdapter<String> {
     private Activity context;
 
     public CurrentClientsCustomList(Activity context, String[] names, String[] desc) {
-        super(context, R.layout.current_clients_list_layout, names);
+        super(context, R.layout.list_layout_current_clients, names);
         this.context = context;
         this.names = names;
         this.desc = desc;
@@ -28,7 +28,7 @@ public class CurrentClientsCustomList extends ArrayAdapter<String> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View listViewItem = inflater.inflate(R.layout.current_clients_list_layout, null, true);
+        View listViewItem = inflater.inflate(R.layout.list_layout_current_clients, null, true);
         TextView textViewName = (TextView) listViewItem.findViewById(R.id.textViewName);
         TextView textViewDesc = (TextView) listViewItem.findViewById(R.id.textViewDesc);
 

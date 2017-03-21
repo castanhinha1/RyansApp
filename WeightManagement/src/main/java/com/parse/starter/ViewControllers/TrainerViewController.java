@@ -20,7 +20,7 @@ import com.parse.starter.R;
 
 import ConfigClasses.CurrentClientsCustomList;
 
-public class TrainerView extends AppCompatActivity {
+public class TrainerViewController extends AppCompatActivity {
 
     TextView labelTV;
 
@@ -43,7 +43,7 @@ public class TrainerView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trainer_view);
+        setContentView(R.layout.activity_trainer_view);
 
         getUserType();
         labelTV = (TextView) findViewById(R.id.clientsTextView);
@@ -105,7 +105,7 @@ public class TrainerView extends AppCompatActivity {
 
     public void addNewClient(View view) {
 
-        Intent intent = new Intent(getApplicationContext(), NewClient.class);
+        Intent intent = new Intent(getApplicationContext(), NewClientController.class);
         startActivity(intent);
 
     }

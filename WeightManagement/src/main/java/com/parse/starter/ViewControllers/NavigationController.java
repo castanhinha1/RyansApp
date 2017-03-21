@@ -32,7 +32,7 @@ public class NavigationController extends AppCompatActivity {
     }
 
     public void onProfileButtonClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), YourProfile.class);
+        Intent intent = new Intent(getApplicationContext(), YourProfileController.class);
         startActivity(intent);
     }
 
@@ -47,7 +47,7 @@ public class NavigationController extends AppCompatActivity {
     }
 
     public void onFindTrainerButtonClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), TrainerView.class);
+        Intent intent = new Intent(getApplicationContext(), TrainerViewController.class);
         startActivity(intent);
     }
 

@@ -64,7 +64,7 @@ public class LoginController extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_view);
+        setContentView(R.layout.activity_login_view);
 
         usernamefield = (EditText) findViewById(R.id.username);
         passwordfield = (EditText) findViewById(R.id.password);

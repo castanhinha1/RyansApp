@@ -4,7 +4,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ListView;
 
 import com.parse.starter.R;
@@ -16,7 +15,7 @@ import ConfigClasses.NewClientCustomList;
 import Loaders.ClientLoader;
 import Models.Client;
 
-public class NewClient extends FragmentActivity implements LoaderManager.LoaderCallbacks<List<Client>> {
+public class NewClientController extends FragmentActivity implements LoaderManager.LoaderCallbacks<List<Client>> {
 
     NewClientCustomList clientAdapter;
 
@@ -34,7 +33,7 @@ public class NewClient extends FragmentActivity implements LoaderManager.LoaderC
 
     @Override
     public Loader<List<Client>> onCreateLoader(int id, Bundle args) {
-        return new ClientLoader(NewClient.this, clientAdapter);
+        return new ClientLoader(NewClientController.this, clientAdapter);
     }
 
     @Override

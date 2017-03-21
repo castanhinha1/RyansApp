@@ -16,7 +16,7 @@ import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
 
 
-public class WeightManagement extends Application {
+public class WeightManagementMain extends Application {
 
   @Override
   public void onCreate() {

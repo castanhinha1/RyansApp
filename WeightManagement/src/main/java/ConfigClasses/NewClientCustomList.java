@@ -1,11 +1,9 @@
 package ConfigClasses;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -36,7 +34,7 @@ public class NewClientCustomList extends BaseAdapter {
     public View getView(int position, View view, ViewGroup parent) {
         Client client = (Client) getItem(position);
         if (view == null) {
-            view = inflater.inflate(R.layout.new_client_list_layout, null);
+            view = inflater.inflate(R.layout.list_layout_new_client, null);
         }
         TextView name = (TextView) view.findViewById(R.id.textViewUserName);
         name.setText(client.name);
