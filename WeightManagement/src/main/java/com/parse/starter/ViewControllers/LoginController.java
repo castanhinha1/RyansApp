@@ -71,6 +71,7 @@ public class LoginController extends ActionBarActivity {
         facebookbutton = (Button) findViewById(R.id.facebook_button);
 
         if (ParseUser.getCurrentUser() != null) {
+            //ToDo add custom user class
             goToNavigationScreen();
         }
 

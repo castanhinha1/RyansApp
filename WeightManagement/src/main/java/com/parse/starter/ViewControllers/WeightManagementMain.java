@@ -9,6 +9,7 @@
 package com.parse.starter.ViewControllers;
 
 import android.app.Application;
+import android.content.Intent;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
@@ -39,11 +40,6 @@ public class WeightManagementMain extends Application {
     // Optionally enable public read access.
     // defaultACL.setPublicReadAccess(true);
     ParseACL.setDefaultACL(defaultACL, true);
-
-    if (ParseUser.getCurrentUser() != null) {
-      /*Intent intent = new Intent(getApplicationContext(), NavigationController.class);
-      startActivity(intent);*/
-    }
 
   }
 }

@@ -3,129 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_8903c6776f82e92c9269cbd11613ceff8124c96f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="174baea9596626def12c4cf55848b29430406e94">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8dda3efdb0ad2bcb4ed4846a705fcaf7289b44ff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_8903c6776f82e92c9269cbd11613ceff8124c96f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\parse-android-1.13.0_6a359b10fbe53366e5c6e0fa23bb2a689d4bf632\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.5.0_a8a472c29fece0accfe754caa968eb0d09ab0a6f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_8a2cc61e8bf1a11f6f73be3ef629fe75e8b91a76\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_4eeec0c45a816295ff6d7aa42495c482b2281a69\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_4eeec0c45a816295ff6d7aa42495c482b2281a69\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.5.0_a8a472c29fece0accfe754caa968eb0d09ab0a6f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_48097c33fffe0caaeb5d1b4280fdb316a67e45b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.2.0_1a49cd249e68f5c298e04277a0a8ea78f7056d4b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.2.0_1a49cd249e68f5c298e04277a0a8ea78f7056d4b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="9ed63707b57f2d4b2cd252cf1c70a28b6df6f937">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8dda3efdb0ad2bcb4ed4846a705fcaf7289b44ff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_1c85c0976c567ec425ac98628466df52a05adb9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_8903c6776f82e92c9269cbd11613ceff8124c96f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_8903c6776f82e92c9269cbd11613ceff8124c96f.jar" />
     </item>
     <item
         is-multidex="true"
@@ -137,13 +38,13 @@
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_6d11b21623b834dc56abdd5ac41c678928c72bcd\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parsefacebookutils-v4-android\1.10.3\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="771e1739a38be7573c55458d16ca2d2f9f546cf7">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.parse-parsefacebookutils-v4-android-1.10.3_67c0b3b2d29785692a7ac30ced665878c2053e55\classes.dex" />
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_2a110691c31b473a1bc408d2d8de80db4b682ce6.jar" />
     </item>
     <item
         is-multidex="true"
@@ -173,31 +74,31 @@
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_d0ca8065895ddc8cbdd560c6050faa4dfc3e60ac\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_1c85c0976c567ec425ac98628466df52a05adb9b\classes.dex" />
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_8a2cc61e8bf1a11f6f73be3ef629fe75e8b91a76.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_6d11b21623b834dc56abdd5ac41c678928c72bcd\classes.dex" />
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_4b42fb3d1ca67d41ee29ba106ed83ec77922d155.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="f8bb165e66c07d8e19f02c8b769547e346c36e90">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_645e7be8de4ebf06e8308bf24f99fffbdf5ee3c1\classes.dex" />
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_d0ca8065895ddc8cbdd560c6050faa4dfc3e60ac.jar" />
     </item>
     <item
         is-multidex="true"
@@ -209,13 +110,22 @@
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.parse-parsefacebookutils-v4-android-1.10.3_67c0b3b2d29785692a7ac30ced665878c2053e55\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_02baeb670494e05445d1d19bd633f25b3b7164c6.jar" />
+    </item>
+    <item
         is-multidex="true"
-        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_94eb8f5bfe9afa56c3e6d5a68fffeb4b55c6fd11\classes.dex" />
+        revision="25.0.1"
+        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.5.0_a8a472c29fece0accfe754caa968eb0d09ab0a6f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -225,6 +135,33 @@
         revision="25.0.1"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_02baeb670494e05445d1d19bd633f25b3b7164c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parsefacebookutils-v4-android\1.10.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="771e1739a38be7573c55458d16ca2d2f9f546cf7">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.parse-parsefacebookutils-v4-android-1.10.3_67c0b3b2d29785692a7ac30ced665878c2053e55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.5.0_a8a472c29fece0accfe754caa968eb0d09ab0a6f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_8a2cc61e8bf1a11f6f73be3ef629fe75e8b91a76\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -254,6 +191,33 @@
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_3b4f952c4039f9e2b9c5347f772eb496fe55e966\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_1c85c0976c567ec425ac98628466df52a05adb9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_94eb8f5bfe9afa56c3e6d5a68fffeb4b55c6fd11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_5463775633dcb339a0a7cb83bd1ca381fe59984a.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="true"
@@ -264,12 +228,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.1"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_02baeb670494e05445d1d19bd633f25b3b7164c6\classes.dex" />
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_4eeec0c45a816295ff6d7aa42495c482b2281a69\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -279,6 +243,42 @@
         revision="25.0.1"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_891b319c71db66452dc05049b0c9f7d3e9e701fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_ddfe8d7e15d4fdb7b0f130602975483d271b1eb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_4eeec0c45a816295ff6d7aa42495c482b2281a69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_3b4f952c4039f9e2b9c5347f772eb496fe55e966.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_891b319c71db66452dc05049b0c9f7d3e9e701fe.jar" />
     </item>
     <item
         is-multidex="true"
@@ -291,6 +291,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_48097c33fffe0caaeb5d1b4280fdb316a67e45b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_71aef0e2ac8806f306224c6d193acf782052aae4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_48097c33fffe0caaeb5d1b4280fdb316a67e45b5.jar" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -300,12 +327,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.2.0_1a49cd249e68f5c298e04277a0a8ea78f7056d4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
         <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\parse-android-1.13.0_6a359b10fbe53366e5c6e0fa23bb2a689d4bf632\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_6d11b21623b834dc56abdd5ac41c678928c72bcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\parse-android-1.13.0_6a359b10fbe53366e5c6e0fa23bb2a689d4bf632.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1be36486054396ed8cc06a4d0076a9fbe15cc123">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8dda3efdb0ad2bcb4ed4846a705fcaf7289b44ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dylan Castanhinha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\pre-dexed\debug\bolts-android-1.2.0_1a49cd249e68f5c298e04277a0a8ea78f7056d4b.jar" />
     </item>
 
 </items>

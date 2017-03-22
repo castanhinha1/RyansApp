@@ -14,191 +14,22 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="Code cleanup">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NewClient.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NewClientController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerView.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagement.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfile.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/current_clients_list_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/list_layout_current_clients.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/login_view.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_login_view.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/new_client_list_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/list_layout_new_client.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/trainer_view.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_trainer_view.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/your_profile.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_your_profile.xml" />
+    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/login_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/your_profile.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/de/hdodenhof/circleimageview/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/de/hdodenhof/circleimageview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_fade_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_fade_out.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_search_url_text.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_search_url_text.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_search_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_media_action.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_media_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_media.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_media.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-af/values-af.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-am/values-am.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-am/values-am.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ar/values-ar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-bg/values-bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-bn-rBD/values-bn-rBD.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-bn-rBD/values-bn-rBD.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ca/values-ca.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-cs/values-cs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-da/values-da.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-de/values-de.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-el/values-el.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-en-rIN/values-en-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-en-rIN/values-en-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-es-rUS/values-es-rUS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-es/values-es.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-et-rEE/values-et-rEE.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-et-rEE/values-et-rEE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-eu-rES/values-eu-rES.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-eu-rES/values-eu-rES.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fa/values-fa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fi/values-fi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fr-rCA/values-fr-rCA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-fr/values-fr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-gl-rES/values-gl-rES.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-gl-rES/values-gl-rES.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hdpi-v4/values-hdpi-v4.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hdpi-v4/values-hdpi-v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hi/values-hi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hr/values-hr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hu/values-hu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-hy-rAM/values-hy-rAM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-in/values-in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-is-rIS/values-is-rIS.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-is-rIS/values-is-rIS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-it/values-it.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-iw/values-iw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ja/values-ja.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ka-rGE/values-ka-rGE.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ka-rGE/values-ka-rGE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-kk-rKZ/values-kk-rKZ.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-kk-rKZ/values-kk-rKZ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-km-rKH/values-km-rKH.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-km-rKH/values-km-rKH.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-kn-rIN/values-kn-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ko/values-ko.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ky-rKG/values-ky-rKG.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ky-rKG/values-ky-rKG.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-land/values-land.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-land/values-land.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-large-v4/values-large-v4.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-large-v4/values-large-v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lo-rLA/values-lo-rLA.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lo-rLA/values-lo-rLA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lt/values-lt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-lv/values-lv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mk-rMK/values-mk-rMK.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mk-rMK/values-mk-rMK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ml-rIN/values-ml-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ml-rIN/values-ml-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mn-rMN/values-mn-rMN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mn-rMN/values-mn-rMN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mr-rIN/values-mr-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-mr-rIN/values-mr-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ms-rMY/values-ms-rMY.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ms-rMY/values-ms-rMY.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-my-rMM/values-my-rMM.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-my-rMM/values-my-rMM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-nb/values-nb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ne-rNP/values-ne-rNP.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ne-rNP/values-ne-rNP.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-nl/values-nl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pl/values-pl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-pt/values-pt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ro/values-ro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ru/values-ru.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-si-rLK/values-si-rLK.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-si-rLK/values-si-rLK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sk/values-sk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sl/values-sl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sr/values-sr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sv/values-sv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-sw/values-sw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ta-rIN/values-ta-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ta-rIN/values-ta-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-te-rIN/values-te-rIN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-te-rIN/values-te-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-th/values-th.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-tl/values-tl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-tr/values-tr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-uk/values-uk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ur-rPK/values-ur-rPK.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-ur-rPK/values-ur-rPK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-uz-rUZ/values-uz-rUZ.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-uz-rUZ/values-uz-rUZ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v12/values-v12.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v12/values-v12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v17/values-v17.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v17/values-v17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-v21/values-v21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-vi/values-vi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-xlarge-v4/values-xlarge-v4.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-xlarge-v4/values-xlarge-v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values-zu/values-zu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/WeightManagement/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/CurrentClientsCustomList.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/CurrentClientsCustomList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/NewClientCustomList.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/NewClientCustomList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/Loaders/ClientLoader.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/Loaders/ClientLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_new_client.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_new_client.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <manually-removed-from-ignored>
@@ -233,97 +64,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CurrentDetailsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/CurrentDetailsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YourProfileController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewClientController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NewClientController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/SignUpController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrainerViewController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WeightManagementMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ASClass" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -2117,11 +1895,12 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/CurrentDetailsController.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/YourProfile.java" />
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NewClientController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java" />
       </list>
     </option>
   </component>
@@ -2754,7 +2533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488322102858</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Code cleanup">
+      <created>1490126123156</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1490126123156</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2869,8 +2655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/login_view.xml" />
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/LoginController.java" />
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/login_view.xml" />
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/LoginController.java" />
@@ -2980,14 +2764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3004,14 +2780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/SignUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3020,18 +2788,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
           <folding />
         </state>
       </provider>
