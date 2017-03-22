@@ -1,6 +1,8 @@
 package ConfigClasses;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,37 +22,33 @@ import Models.Client;
 
 public class NewClientCustomList extends BaseAdapter {
 
-    private LayoutInflater inflater;
-    private List<Client> clients = new ArrayList<Client>();
+    Context context;
+    LayoutInflater inflater;
+    private List<Client> clientList = null;
+    private ArrayList<Client> arrayList;
 
-    public NewClientCustomList(Context context, List<Client> clients) {
+    public NewClientCustomList(Context context, List<Client> clientList){
 
-        this.clients = clients;
+        this.context = context;
+        this.clientList = clientList;
         inflater = LayoutInflater.from(context);
-
+        this.arrayList = new ArrayList<Client>();
+        this.arrayList.addAll(clientList);
     }
 
-    @Override
-    public View getView(int position, View view, ViewGroup parent) {
-        Client client = (Client) getItem(position);
-        if (view == null) {
-            view = inflater.inflate(R.layout.list_layout_new_client, null);
-        }
-        TextView name = (TextView) view.findViewById(R.id.textViewUserName);
-        name.setText(client.name);
-        TextView clientID = (TextView) view.findViewById(R.id.textViewObjectId);
-        clientID.setText(client.objectId);
-        return view;
+    public class ViewHolder {
+        TextView objectId;
+        TextView name;
     }
 
     @Override
     public int getCount() {
-        return clients.size();
+        return clientList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return clients.get(position);
+        return clientList.get(position);
     }
 
     @Override
@@ -58,9 +56,28 @@ public class NewClientCustomList extends BaseAdapter {
         return position;
     }
 
-    public void setClients(List<Client> data) {
-        clients.addAll(data);
-        notifyDataSetChanged();
-    }
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        final ViewHolder holder;
+        if(convertView == null){
+            holder = new ViewHolder();
+            convertView = inflater.inflate(R.layout.list_layout_new_client, null);
+            holder.objectId = (TextView) convertView.findViewById(R.id.textViewObjectId);
+            holder.name = (TextView) convertView.findViewById(R.id.textViewUserName);
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+        holder.objectId.setText(clientList.get(position).getObjectId());
+        holder.name.setText(clientList.get(position).getName());
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("AppInfo", "Client Pressed");
+            }
+        });
+
+        return convertView;
+    }
 }
