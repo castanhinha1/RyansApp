@@ -10,12 +10,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#3a8f3e">
 
+    <include layout="@layout/title_bar" />
+
     <ConfigClasses.ProfilePictureView
         android:id="@+id/profile_picture"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"></ConfigClasses.ProfilePictureView>
+        android:layout_marginTop="70dp"></ConfigClasses.ProfilePictureView>
 
     <TextView
         android:text="Name"

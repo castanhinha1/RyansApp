@@ -58,7 +58,8 @@
         <activity android:name=".ViewControllers.HomeController" />
         <activity android:name=".ViewControllers.YourProfileController" />
         <activity android:name=".ViewControllers.TrainerViewController" />
-        <activity android:name=".ViewControllers.NewClientController"></activity>
+        <activity android:name=".ViewControllers.NewClientController" />
+        <activity android:name=".ViewControllers.ClientProfileController"></activity>
     </application>
 
 </manifest>
