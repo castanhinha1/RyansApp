@@ -210,7 +210,6 @@ public class ProfilePictureView extends FrameLayout {
             setBlankProfilePicture();
             force = true;
         }
-
         this.profileId = profileId;
         refreshImage(force);
     }

@@ -25,7 +25,6 @@ import android.widget.Toast;
 import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
-import com.facebook.HttpMethod;
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
@@ -38,6 +37,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -45,16 +45,16 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
+import Models.User;
 
 public class LoginController extends ActionBarActivity {
 
+    byte[] imageData;
     EditText usernamefield;
     EditText passwordfield;
     Button facebookbutton;
-    ParseUser parseUser;
-
-    String name = null, email = null;
-
+    User currentUser;
+    String fullname = null, email = null, location = null, firstname = null, lastname = null;
     public static final List<String> mPermissions = new ArrayList<String>() {{
         add("public_profile");
         add("email");
@@ -69,36 +69,29 @@ public class LoginController extends ActionBarActivity {
         usernamefield = (EditText) findViewById(R.id.username);
         passwordfield = (EditText) findViewById(R.id.password);
         facebookbutton = (Button) findViewById(R.id.facebook_button);
-
         if (ParseUser.getCurrentUser() != null) {
-            //ToDo add custom user class
+            Log.i("AppInfo", "ObjectID: "+ParseUser.getCurrentUser().getObjectId());
             goToNavigationScreen();
         }
-
         facebookbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 ParseFacebookUtils.logInWithReadPermissionsInBackground(LoginController.this, mPermissions, new LogInCallback() {
                     @Override
                     public void done(ParseUser user, ParseException e) {
-
                         if (user == null) {
-                            Log.i("Info", "User Canceled");
                         } else if (user.isNew()) {
-                            Log.i("Info", "User signed up and logged in through facebook!");
+                            currentUser = (User) ParseUser.getCurrentUser();
+                            currentUser.setTrainerStatus(false);
                             getUserDetailsFromFB();
                         } else {
-                            Log.i("Info", "User logged in through facebook!");
+                            currentUser = (User) ParseUser.getCurrentUser();
                             getUserDetailsFromParse();
                         }
-
                     }
                 });
-
             }
         });
-
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
 
@@ -108,65 +101,93 @@ public class LoginController extends ActionBarActivity {
     }
 
     private void getUserDetailsFromFB() {
-
-        // Suggested by https://disqus.com/by/dominiquecanlas/
-        Bundle parameters = new Bundle();
-        parameters.putString("fields", "email,name,picture");
-
-
-        new GraphRequest(
-                AccessToken.getCurrentAccessToken(),
-                "/me",
-                parameters,
-                HttpMethod.GET,
-                new GraphRequest.Callback() {
-                    public void onCompleted(GraphResponse response) {
-            /* handle the result */
-                        try {
-
-                            Log.d("Response", response.getRawResponse());
-
-                            email = response.getJSONObject().getString("email");
-
-                            name = response.getJSONObject().getString("name");
-
-                            JSONObject picture = response.getJSONObject().getJSONObject("picture");
-                            JSONObject data = picture.getJSONObject("data");
-
-                            //  Returns a 50x50 profile picture
-                            String pictureUrl = data.getString("url");
-
-                            Log.d("Profile pic", "url: " + pictureUrl);
-
-                            new ProfilePhotoAsync(pictureUrl).execute();
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
+        GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
+            @Override
+            public void onCompleted(JSONObject object, GraphResponse response) {
+                try {
+                    location = object.getJSONObject("location").getString("name");
+                    fullname = object.getString("name");
+                    email = object.getString("email");
+                    String[] parts = fullname.split("\\s+");
+                    firstname = parts[0];
+                    lastname = parts[1];
+                    //Profile Picture Code
+                    JSONObject picture = object.getJSONObject("picture");
+                    JSONObject data = picture.getJSONObject("data");
+                    String pictureUrl = data.getString("url");
+                    new ProfilePhotoAsync(pictureUrl).execute();
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-        ).executeAsync();
+            }
+        });
+        Bundle parameters = new Bundle();
+        parameters.putString("fields", "id,location,name,email,picture");
+        request.setParameters(parameters);
+        request.executeAsync();
+    }
 
+    class ProfilePhotoAsync extends AsyncTask<String, String, String> {
+        String url;
+        public ProfilePhotoAsync(String url) {
+            this.url = url;
+        }
+        @Override
+        protected String doInBackground(String... params) {
+            imageData = DownloadImageBitmap(url);
+            return null;
+        }
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            saveNewUser();
+        }
+    }
+
+    public static byte[] DownloadImageBitmap(String url){
+        byte[] imageArray = null;
+        Bitmap bmp = null;
+        try {
+            URL aURL = new URL(url);
+            URLConnection conn = aURL.openConnection();
+            conn.connect();
+            InputStream is = conn.getInputStream();
+            BufferedInputStream bis = new BufferedInputStream(is);
+            bmp = BitmapFactory.decodeStream(bis);
+            bis.close();
+            is.close();
+        } catch (IOException e){
+            Log.i("AppInfo", e.getMessage());
+        }
+        //Convert Bitmap to Byte Array for Storage in Parse
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        imageArray = stream.toByteArray();
+        return imageArray;
     }
 
     private void saveNewUser() {
-        parseUser = ParseUser.getCurrentUser();
-        parseUser.setUsername(name);
-        parseUser.setEmail(email);
-
+        currentUser.setFullName(fullname);
+        currentUser.setEmail(email);
+        currentUser.setLocation(location);
+        currentUser.setFirstName(firstname);
+        currentUser.setLastName(lastname);
+        currentUser.setProfilePicture(imageData);
         //Finally save all the user details
-        parseUser.saveInBackground(new SaveCallback() {
+        currentUser.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
-                goToNavigationScreen();
+                if (e == null) {
+                    goToNavigationScreen();
+                } else {
+                    Log.i("AppInfo", "Message: "+e.getMessage());
+                }
             }
         });
-
     }
 
     private void getUserDetailsFromParse() {
-        parseUser = ParseUser.getCurrentUser();
-        Toast.makeText(LoginController.this, "Welcome back!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(LoginController.this, "Welcome back "+currentUser.getFirstName()+"!", Toast.LENGTH_SHORT).show();
         goToNavigationScreen();
     }
 
@@ -189,19 +210,15 @@ public class LoginController extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-
     public void onLoginButtonClick(View view) {
-
         //Check to make sure user is not already logged in
-        if (ParseUser.getCurrentUser() == null) {
+        if (currentUser.getObjectId() == null) {
             ParseUser.logInInBackground(String.valueOf(usernamefield.getText()), String.valueOf(passwordfield.getText()), new LogInCallback() {
 
                 @Override
@@ -222,44 +239,5 @@ public class LoginController extends ActionBarActivity {
         //Move to Sign Up Activity
         Intent intent = new Intent(this, SignUpController.class);
         startActivity(intent);
-    }
-
-    class ProfilePhotoAsync extends AsyncTask<String, String, String> {
-        public Bitmap bitmap;
-        String url;
-
-        public ProfilePhotoAsync(String url) {
-            this.url = url;
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            // Fetching data from URI and storing in bitmap
-            bitmap = DownloadImageBitmap(url);
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            super.onPostExecute(s);
-            saveNewUser();
-        }
-    }
-
-    public static Bitmap DownloadImageBitmap(String url) {
-        Bitmap bm = null;
-        try {
-            URL aURL = new URL(url);
-            URLConnection conn = aURL.openConnection();
-            conn.connect();
-            InputStream is = conn.getInputStream();
-            BufferedInputStream bis = new BufferedInputStream(is);
-            bm = BitmapFactory.decodeStream(bis);
-            bis.close();
-            is.close();
-        } catch (IOException e) {
-            Log.e("IMAGE", "Error getting bitmap", e);
-        }
-        return bm;
     }
 }

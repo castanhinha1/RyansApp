@@ -24,11 +24,10 @@ import java.util.List;
 
 import ConfigClasses.ClientCustomList;
 import Models.Client;
+import Models.User;
 
 public class TrainerViewController extends AppCompatActivity {
-
     TextView labelTV;
-
     ListView listview;
     List<ParseObject> ob;
     ProgressDialog mProgressDialog;
@@ -36,34 +35,25 @@ public class TrainerViewController extends AppCompatActivity {
     ArrayList<String> clientsObjectIds;
     int currentListView = 0;
     private List<Client> clientList = null;
+    User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trainer_view);
 
-        getUserType();
+        currentUser = (User) ParseUser.getCurrentUser();
         labelTV = (TextView) findViewById(R.id.clientsTextView);
+        setLabels();
         new CurrentClientLoader().execute();
     }
 
-    public void getUserType(){
-        ParseQuery<ParseUser> query = ParseUser.getQuery();
-        query.whereEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-        query.getFirstInBackground(new GetCallback<ParseUser>() {
-            @Override
-            public void done(ParseUser object, ParseException e) {
-                if (object == null) {
-                    labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " Trainer");
-                } else {
-                    if ((boolean) object.get("isTrainer")) {
-                        labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " Clients");
-                    } else {
-                        labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " Trainer");
-                    }
-                }
-            }
-        });
+    public void setLabels(){
+        if (currentUser.getTrainerStatus()){
+            labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " Clients");
+        } else {
+            labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " User");
+        }
     }
 
     public void addNewClient(View view) {

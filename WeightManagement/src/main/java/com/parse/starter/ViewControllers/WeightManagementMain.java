@@ -9,7 +9,6 @@
 package com.parse.starter.ViewControllers;
 
 import android.app.Application;
-import android.content.Intent;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
@@ -18,6 +17,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 import Models.Client;
+import Models.User;
 
 
 public class WeightManagementMain extends Application {
@@ -29,7 +29,9 @@ public class WeightManagementMain extends Application {
     // Enable Local Datastore.
     Parse.enableLocalDatastore(this);
 
+    //Register Parse subclasses
     ParseObject.registerSubclass(Client.class);
+    ParseUser.registerSubclass(User.class);
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())

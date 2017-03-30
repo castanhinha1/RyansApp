@@ -12,12 +12,12 @@
 
     <include layout="@layout/title_bar" />
 
-    <ConfigClasses.ProfilePictureView
+    <ImageView
         android:id="@+id/profile_picture"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"></ConfigClasses.ProfilePictureView>
+        android:layout_marginTop="70dp" />
 
     <TextView
         android:text="Name"

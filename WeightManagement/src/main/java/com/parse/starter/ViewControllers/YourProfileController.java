@@ -7,24 +7,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.facebook.AccessToken;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
 import com.facebook.Profile;
-import com.parse.GetCallback;
 import com.parse.ParseException;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.starter.R;
 
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import ConfigClasses.ProfilePictureView;
+import Models.User;
 
 
 public class YourProfileController extends AppCompatActivity {
@@ -33,111 +26,68 @@ public class YourProfileController extends AppCompatActivity {
     TextView locationTV;
     ProfilePictureView profilePictureView;
     CheckBox trainerCheckbox;
-    String location;
+    User currentUser;
+    ImageView profilePicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_your_profile);
 
-        profilePictureView = (ProfilePictureView) findViewById(R.id.profile_picture);
-        profilePictureView.setProfileId(Profile.getCurrentProfile().getId());
+        currentUser = (User) ParseUser.getCurrentUser();
+
+        //profilePictureView = (ProfilePictureView) findViewById(R.id.profile_picture);
+        //profilePictureView.setProfileId(Profile.getCurrentProfile().getId());
+
+        profilePicture = (ImageView) findViewById(R.id.profile_picture);
+        profilePicture.setImageBitmap(currentUser.getProfilePicture());
 
         nameTV = (TextView) findViewById(R.id.nameTV);
-        nameTV.setText(Profile.getCurrentProfile().getFirstName()+" "+Profile.getCurrentProfile().getLastName());
-
+        nameTV.setText(currentUser.getFullName());
         locationTV = (TextView) findViewById(R.id.locationTV);
+        locationTV.setText(currentUser.getLocation());
 
         trainerCheckbox = (CheckBox) findViewById(R.id.trainerCheckBox);
-
-        GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-            @Override
-            public void onCompleted(JSONObject object, GraphResponse response) {
-
-                try {
-                    location = object.getJSONObject("location").getString("name");
-                    locationTV.setText(location);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-        Bundle parameters = new Bundle();
-        parameters.putString("fields", "id, location");
-        request.setParameters(parameters);
-        request.executeAsync();
-
-
-        ParseQuery<ParseUser> query = ParseUser.getQuery();
-        query.whereEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-        query.getFirstInBackground(new GetCallback<ParseUser>() {
-            @Override
-            public void done(ParseUser object, ParseException e) {
-                if (object == null) {
-                    trainerCheckbox.setChecked(false);
-                } else {
-                    if (object.get("isTrainer") == null){
-                        trainerCheckbox.setChecked(false);
-                    } else if (object.get("isTrainer") != null && (boolean) object.get("isTrainer") == true) {
-                        trainerCheckbox.setChecked(true);
-                    } else {
-                        trainerCheckbox.setChecked(false);
-                    }
-                }
-            }
-        });
-
-
-
+        if (currentUser.getTrainerStatus()){
+            trainerCheckbox.setChecked(true);
+        } else {
+            trainerCheckbox.setChecked(false);
+        }
         //Listener for trainer check box and updates database
         trainerCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-
-                    final ParseUser currentUser = ParseUser.getCurrentUser();
-                    currentUser.put("isTrainer", true);
+                    currentUser.put("trainerstatus", true);
                     currentUser.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                Log.i("App Info", "Info Saved");
+                                Log.i("AppInfo", "Trainer status updated");
                             } else {
-                                currentUser.saveEventually();
+                                Log.i("AppInfo", e.getMessage());
                             }
                         }
                     });
-
                 } else {
-
-                    final ParseUser currentUser = ParseUser.getCurrentUser();
-                    currentUser.put("isTrainer", false);
+                    currentUser.put("trainerstatus", false);
                     currentUser.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                Log.i("App Info", "Info Saved");
+                                Log.i("AppInfo", "Trainer status updated");
                             } else {
-                                currentUser.saveEventually();
+                                Log.i("AppInfo", e.getMessage());
                             }
                         }
                     });
-
                 }
             }
         });
-
-
     }
-
     public void logoutButtonClicked(View view){
-
         ParseUser.getCurrentUser().logOut();
         Intent intent = new Intent(getApplicationContext(), LoginController.class);
         startActivity(intent);
-
     }
-
-
 }
