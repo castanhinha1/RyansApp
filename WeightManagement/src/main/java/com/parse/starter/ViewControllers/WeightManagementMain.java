@@ -14,7 +14,10 @@ import android.content.Intent;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseFacebookUtils;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+
+import Models.Client;
 
 
 public class WeightManagementMain extends Application {
@@ -25,6 +28,8 @@ public class WeightManagementMain extends Application {
 
     // Enable Local Datastore.
     Parse.enableLocalDatastore(this);
+
+    ParseObject.registerSubclass(Client.class);
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())

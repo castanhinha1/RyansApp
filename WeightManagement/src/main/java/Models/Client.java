@@ -1,31 +1,27 @@
 package Models;
 
+import com.parse.ParseClassName;
+import com.parse.ParseObject;
+
 /**
  * Created by Dylan Castanhinha on 3/20/2017.
  */
 
-public class Client {
+@ParseClassName("Client")
+public class Client extends ParseObject {
 
-    private String objectId;
-    private String name;
-
-
-    public String getObjectId(){
-        return objectId;
+    public String getObjectId() {
+        return getString("objectId");
+    }
+    public void setObjectId(String value) {
+        put("objectId", value);
     }
 
-    public void setObjectId(String objectId){
-        this.objectId = objectId;
+    public String getName() {
+        return getString("username");
     }
-
-    public String getName(){
-        return name;
+    public void setName(String value) {
+        put("username", value);
     }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-
-
 }
+

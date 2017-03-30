@@ -1,6 +1,8 @@
 package com.parse.starter.ViewControllers;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,14 +19,24 @@ public class NavigationController extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
     }
 
-    public void logOut(View view) {
+    @Override
+    public void onBackPressed(){
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Log Out?")
+                .setMessage("Are you sure you want to log out?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ParseUser.getCurrentUser().logOut();
+                        finish();
+                    }
 
-        ParseUser.getCurrentUser().logOut();
-        Intent intent = new Intent(getApplicationContext(), LoginController.class);
-        startActivity(intent);
-
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
-
     public void onHomeButtonClick(View view) {
         //Log.i("Info", "Home Button Clicked");
         Intent intent = new Intent(getApplicationContext(), HomeController.class);

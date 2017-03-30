@@ -33,7 +33,6 @@ public class YourProfileController extends AppCompatActivity {
     TextView locationTV;
     ProfilePictureView profilePictureView;
     CheckBox trainerCheckbox;
-    boolean isTrainer;
     String location;
 
     @Override
@@ -76,14 +75,13 @@ public class YourProfileController extends AppCompatActivity {
             @Override
             public void done(ParseUser object, ParseException e) {
                 if (object == null) {
-                    isTrainer = false;
                     trainerCheckbox.setChecked(false);
                 } else {
-                    if ((boolean) object.get("isTrainer")) {
-                        isTrainer = true;
+                    if (object.get("isTrainer") == null){
+                        trainerCheckbox.setChecked(false);
+                    } else if (object.get("isTrainer") != null && (boolean) object.get("isTrainer") == true) {
                         trainerCheckbox.setChecked(true);
                     } else {
-                        isTrainer = false;
                         trainerCheckbox.setChecked(false);
                     }
                 }
