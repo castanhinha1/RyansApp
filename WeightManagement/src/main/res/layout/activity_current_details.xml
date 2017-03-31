@@ -138,7 +138,7 @@
         <Button
             android:text="Calculate!"
             android:layout_width="match_parent"
-            android:id="@+id/submitButton"
+            android:id="@+id/calculateButton"
             android:layout_below="@+id/buttonVeryHeavy"
             android:layout_marginTop="26dp"
             android:onClick="calculateBMR" />

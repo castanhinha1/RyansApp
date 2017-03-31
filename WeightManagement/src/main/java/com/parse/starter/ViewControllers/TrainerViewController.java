@@ -5,14 +5,11 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.facebook.Profile;
 import com.parse.FindCallback;
-import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -22,8 +19,7 @@ import com.parse.starter.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import ConfigClasses.ClientCustomList;
-import Models.Client;
+import ConfigClasses.UserCustomList;
 import Models.User;
 
 public class TrainerViewController extends AppCompatActivity {
@@ -31,11 +27,10 @@ public class TrainerViewController extends AppCompatActivity {
     ListView listview;
     List<ParseObject> ob;
     ProgressDialog mProgressDialog;
-    ClientCustomList adapter;
-    ArrayList<String> clientsObjectIds;
+    UserCustomList adapter;
     int currentListView = 0;
-    private List<Client> clientList = null;
     User currentUser;
+    private List<User> userList = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +40,14 @@ public class TrainerViewController extends AppCompatActivity {
         currentUser = (User) ParseUser.getCurrentUser();
         labelTV = (TextView) findViewById(R.id.clientsTextView);
         setLabels();
-        new CurrentClientLoader().execute();
+        new CurrentUserListLoader().execute();
     }
 
     public void setLabels(){
         if (currentUser.getTrainerStatus()){
-            labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " Clients");
+            labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
         } else {
-            labelTV.setText(Profile.getCurrentProfile().getFirstName() + " " + Profile.getCurrentProfile().getLastName() + "'s" + " User");
+            labelTV.setText("Hello, "+currentUser.getFirstName()+"!");
         }
     }
 
@@ -61,7 +56,7 @@ public class TrainerViewController extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private class CurrentClientLoader extends AsyncTask<Void, Void, Void> {
+    private class CurrentUserListLoader extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected void onPreExecute(){
@@ -75,39 +70,16 @@ public class TrainerViewController extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            //Find trainers clients
-            clientsObjectIds = new ArrayList<>();
-            ParseQuery<ParseObject> query1 = ParseQuery.getQuery("ClientTrainerRelation");
-            query1.whereEqualTo("trainer", ParseUser.getCurrentUser().getObjectId());
-            query1.findInBackground(new FindCallback<ParseObject>() {
+            userList = new ArrayList<User>();
+            ParseQuery<User> query = ParseQuery.getQuery(User.class);
+            query.whereEqualTo("trainerstatus", false);
+            query.whereNotEqualTo("objectId", currentUser.getObjectId());
+            query.findInBackground(new FindCallback<User>() {
                 @Override
-                public void done(List<ParseObject> objects, ParseException e) {
-                    if (objects != null && e == null){
-                        for (int i = 0; i < objects.size(); i++) {
-                            String objectId = objects.get(i).getString("client");
-                            clientsObjectIds.add(objectId);
-                            Log.i("AppInfo", clientsObjectIds.toString());
-                            Client client = ParseObject.createWithoutData(Client.class, objectId);
-                            //clientList.add(client);
-                        }
-                    }
-                }
-            });
-
-            //Get those clients
-            clientList = new ArrayList<Client>();
-            ParseQuery<ParseUser> query2 = ParseUser.getQuery();
-            query2.whereNotEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-            query2.whereEqualTo("isTrainer", false);
-            query2.findInBackground(new FindCallback<ParseUser>() {
-                @Override
-                public void done(List<ParseUser> userObjects, ParseException error) {
-                    if (userObjects != null) {
-                        for (int i = 0; i < userObjects.size(); i++) {
-                            Client client = new Client();
-                            client.setObjectId(userObjects.get(i).getObjectId());
-                            client.setName(userObjects.get(i).get("username").toString());
-                            clientList.add(client);
+                public void done(List<User> objects, ParseException e) {
+                    if (objects != null) {
+                        for (int i = 0; i < objects.size(); i++){
+                            userList.add(objects.get(i));
                         }
                     }
                 }
@@ -118,30 +90,10 @@ public class TrainerViewController extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result){
             listview = (ListView) findViewById(R.id.ClientsListView);
-            adapter = new ClientCustomList(TrainerViewController.this, clientList, currentListView);
+            adapter = new UserCustomList(TrainerViewController.this, userList, currentListView);
             listview.setAdapter(adapter);
             mProgressDialog.dismiss();
         }
     }
 
 }
-
-
-////Get those clients
-//clientList = new ArrayList<Client>();
-//        ParseQuery<ParseUser> query2 = ParseUser.getQuery();
-//        query2.whereNotEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-//        query2.whereEqualTo("isTrainer", false);
-//        query2.findInBackground(new FindCallback<ParseUser>() {
-//@Override
-//public void done(List<ParseUser> userObjects, ParseException error) {
-//        if (userObjects != null) {
-//        for (int i = 0; i < userObjects.size(); i++) {
-//        Client client = new Client();
-//        client.setObjectId(userObjects.get(i).getObjectId());
-//        client.setName(userObjects.get(i).get("username").toString());
-//        clientList.add(client);
-//        }
-//        }
-//        }
-//        });

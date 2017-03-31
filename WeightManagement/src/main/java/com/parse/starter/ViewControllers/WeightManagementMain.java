@@ -16,7 +16,6 @@ import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-import Models.Client;
 import Models.User;
 
 
@@ -30,7 +29,6 @@ public class WeightManagementMain extends Application {
     Parse.enableLocalDatastore(this);
 
     //Register Parse subclasses
-    ParseObject.registerSubclass(Client.class);
     ParseUser.registerSubclass(User.class);
 
     // Add your initialization code here

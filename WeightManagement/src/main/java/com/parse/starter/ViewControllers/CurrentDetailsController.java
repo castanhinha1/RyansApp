@@ -3,8 +3,11 @@ package com.parse.starter.ViewControllers;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
@@ -13,40 +16,58 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 import com.parse.starter.R;
 
 import java.util.List;
+
+import ConfigClasses.BMRCalculator;
+import Models.User;
 
 import static android.util.Log.d;
 
 public class CurrentDetailsController extends AppCompatActivity {
 
-
     EditText weightTF;
     EditText bodyFatTF;
+    Button calculateButton;
     RadioGroup radioGroup;
     RadioGroup radioGroup2;
-
-    int bodyWeightInLB;
-    double bodyWeightInKG;
-    double leanFactorMultiplier;
-    double equation192;
+    User currentUser;
     double dailyActivityMultplier;
     double sexFactor;
-    double bodyFat;
-    double BMR;
-    double dailyCarloricExpenditure;
+
+    private TextWatcher textWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            checkFieldsForEmptyValues();
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_details);
 
+        currentUser = (User) ParseUser.getCurrentUser();
         weightTF = (EditText) findViewById(R.id.weightTextField);
         bodyFatTF = (EditText) findViewById(R.id.bodyFatTextField);
+        calculateButton = (Button) findViewById(R.id.calculateButton);
+        calculateButton.setEnabled(false);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
 
+
+        weightTF.addTextChangedListener(textWatcher);
+        bodyFatTF.addTextChangedListener(textWatcher);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -69,7 +90,6 @@ public class CurrentDetailsController extends AppCompatActivity {
                 }
             }
         });
-
         radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -83,118 +103,32 @@ public class CurrentDetailsController extends AppCompatActivity {
                 }
             }
         });
-
-    }
-
-
-    public void calculateBMR(View view){
-
-        if(weightTF != null && bodyFatTF != null && radioGroup.getCheckedRadioButtonId() != -1 && radioGroup2.getCheckedRadioButtonId() != -1) {
-            convertWeightToKG();
-            convertBodyFatToDouble();
-            calculateEquation192();
-            calculateLeanFactorMultiplier();
-            BMR = leanFactorMultiplier * equation192;
-            calculateDailyCaloricExpenditures(BMR);
-        } else {
-            Log.i("Info", "Need to make selection");
-        }
-    }
-
-    private void calculateDailyCaloricExpenditures(double bmr) {
-        dailyCarloricExpenditure = bmr * dailyActivityMultplier;
-        int caloriesInt = ((int) dailyCarloricExpenditure);
-        String caloriesString = String.valueOf(caloriesInt);
-        saveToParse(caloriesInt);
-    }
-
-    private void saveToParse(final int calories){
-
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Calories");
-        query.whereEqualTo("user", ParseUser.getCurrentUser());
-        query.findInBackground(new FindCallback<ParseObject>() {
+        calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null && objects.isEmpty() == false) {
-
-                    ParseObject object = objects.get(0);
-                    object.put("calories", calories);
-                    object.saveInBackground();
-                    Intent intent = new Intent(getBaseContext(), HomeController.class);
-                    startActivity(intent);
-
-                } else if (objects.isEmpty() && e == null){
-                    ParseObject totalCalories = new ParseObject("Calories");
-                    totalCalories.put("calories", calories);
-                    totalCalories.put("user", ParseUser.getCurrentUser());
-                    totalCalories.saveInBackground();
-                    Intent intent = new Intent(getBaseContext(), HomeController.class);
-                    startActivity(intent);
-                }
-                else {
-
-                    Log.i("AppInfo", "Something went wrong");
-
-                }
+            public void onClick(View v) {
+                double userWeightInLb = Double.parseDouble(weightTF.getText().toString());
+                double userBodyFat = Double.parseDouble(bodyFatTF.getText().toString());
+                double userSexFactor = sexFactor;
+                double userDailyActvityMultiplier = dailyActivityMultplier;
+                BMRCalculator theBMRCalculator = new BMRCalculator(userWeightInLb, userBodyFat, userSexFactor, userDailyActvityMultiplier);
+                Intent intent = new Intent(getBaseContext(), HomeController.class);
+                startActivity(intent);
             }
         });
-
     }
 
-    private void calculateLeanFactorMultiplier() {
-
-        if(sexFactor != 0 && dailyActivityMultplier != 0) {
-
-            if(sexFactor == 1.0) {
-
-                if(bodyFat >=10 && bodyFat <=14){
-                    leanFactorMultiplier = 1.0;
-                } else if(bodyFat >=15 && bodyFat <=20) {
-                    leanFactorMultiplier = .95;
-                } else if(bodyFat >=21 && bodyFat <= 28) {
-                    leanFactorMultiplier = .90;
-                } else if(bodyFat >=28) {
-                    leanFactorMultiplier = .85;
-                }
-
-            } else if(sexFactor == 0.9){
-                if(bodyFat >=14 && bodyFat <=18){
-                    leanFactorMultiplier = 1.0;
-                } else if(bodyFat >=19 && bodyFat <=28) {
-                    leanFactorMultiplier = .95;
-                } else if(bodyFat >=29 && bodyFat <=38) {
-                    leanFactorMultiplier = .90;
-                } else if(bodyFat >=38){
-                    leanFactorMultiplier = .85;
-                }
-            }
-
-        } else {
-
-            Log.i("Info", "Please enter details");
-
+    private void checkFieldsForEmptyValues(){
+        if(weightTF.equals("") && bodyFatTF.equals("")){
+            calculateButton.setEnabled(false);
+            Log.i("AppInfo", "Here 1");
+        } else if(!(weightTF.equals("")) && (bodyFatTF.equals(""))){
+            calculateButton.setEnabled(false);
+            Log.i("AppInfo", "Here 2");
+        } else if(!(bodyFatTF.equals("")) && (weightTF.equals(""))){
+            calculateButton.setEnabled(false);
+        } else{
+            calculateButton.setEnabled(true);
+            Log.i("AppInfo", "Here 3");
         }
-
     }
-
-    private void convertBodyFatToDouble() {
-        bodyFat = Integer.parseInt(bodyFatTF.getText().toString());
-
-    }
-
-    private void calculateEquation192() {
-
-        equation192 = sexFactor * bodyWeightInKG * 24;
-
-    }
-
-    private void convertWeightToKG() {
-
-        bodyWeightInLB = Integer.parseInt(weightTF.getText().toString());
-        double weightLB = (double) bodyWeightInLB;
-        bodyWeightInKG = (weightLB / 2.2);
-
-    }
-
-
 }

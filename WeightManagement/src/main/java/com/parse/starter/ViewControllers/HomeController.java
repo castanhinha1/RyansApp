@@ -14,41 +14,20 @@ import com.parse.starter.R;
 
 import java.util.List;
 
+import Models.User;
+
 public class HomeController extends AppCompatActivity {
 
-    String calories;
     TextView caloriesTV;
-    int intCalories;
+    User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Calories");
-        query.whereEqualTo("user", ParseUser.getCurrentUser());
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null) {
-
-                    intCalories = (int) objects.get(0).get("calories");
-                    setTextView(intCalories);
-
-                } else {
-
-                    Log.i("AppInfo", "Something went wrong");
-
-                }
-            }
-        });
-
-    }
-
-    public void setTextView(int calories){
-
+        currentUser = (User) ParseUser.getCurrentUser();
         caloriesTV = (TextView) findViewById(R.id.dailycalories);
-        caloriesTV.setText("You should be intaking "+calories +" calories per day.");
-
+        caloriesTV.setText(String.valueOf(currentUser.getCalories()));
     }
 }

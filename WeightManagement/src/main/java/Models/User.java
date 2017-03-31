@@ -12,6 +12,9 @@ import com.parse.ParseUser;
 import com.parse.ProgressCallback;
 import com.parse.SaveCallback;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Dylan Castanhinha on 3/30/2017.
  */
@@ -57,6 +60,35 @@ public class User extends ParseUser {
     public void setLastName(String value){
         put("lastname", value);
     }
+
+    public int getCalories(){
+        return getInt("calories");
+    }
+    public void setCalories(int value){
+        put("calories", value);
+    }
+
+    public List<User> getClients(){
+        return getList("clients");
+    }
+    public void setClients(List<User> value){
+        put("clients", value);
+    }
+
+    public ParseFile getProfilePictureFile(){
+        return getParseFile("profilepicture");
+    }
+
+    public Bitmap getProfilePicture(){
+        Bitmap bmp = null;
+        ParseFile profilePicture = getProfilePictureFile();
+        try {
+            bmp = BitmapFactory.decodeStream(profilePicture.getDataStream());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return bmp;
+    }
     public void setProfilePicture(byte[] value){
         final ParseFile profilePicture = new ParseFile("profilepicture.png", value);
         profilePicture.saveInBackground(new SaveCallback() {
@@ -78,15 +110,6 @@ public class User extends ParseUser {
             }
         });
     }
-    public Bitmap getProfilePicture(){
-        Bitmap bmp = null;
-        ParseFile profilepicture = getCurrentUser().getParseFile("profilepicture");
-        try {
-            bmp = BitmapFactory.decodeStream(profilepicture.getDataStream());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return bmp;
-    }
+
 }
 

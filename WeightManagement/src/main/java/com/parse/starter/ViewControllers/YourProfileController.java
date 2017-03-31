@@ -7,16 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.facebook.Profile;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.starter.R;
 
-import ConfigClasses.ProfilePictureView;
+import ConfigClasses.MyProfilePictureView;
 import Models.User;
 
 
@@ -24,10 +22,9 @@ public class YourProfileController extends AppCompatActivity {
 
     TextView nameTV;
     TextView locationTV;
-    ProfilePictureView profilePictureView;
     CheckBox trainerCheckbox;
     User currentUser;
-    ImageView profilePicture;
+    MyProfilePictureView profilepicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +32,8 @@ public class YourProfileController extends AppCompatActivity {
         setContentView(R.layout.activity_your_profile);
 
         currentUser = (User) ParseUser.getCurrentUser();
-
-        //profilePictureView = (ProfilePictureView) findViewById(R.id.profile_picture);
-        //profilePictureView.setProfileId(Profile.getCurrentProfile().getId());
-
-        profilePicture = (ImageView) findViewById(R.id.profile_picture);
-        profilePicture.setImageBitmap(currentUser.getProfilePicture());
-
+        profilepicture = (MyProfilePictureView) findViewById(R.id.profile_picture);
+        profilepicture.setImageBitmap(profilepicture.getRoundedBitmap(currentUser.getProfilePicture()));
         nameTV = (TextView) findViewById(R.id.nameTV);
         nameTV.setText(currentUser.getFullName());
         locationTV = (TextView) findViewById(R.id.locationTV);

@@ -54,7 +54,7 @@ public class LoginController extends ActionBarActivity {
     EditText passwordfield;
     Button facebookbutton;
     User currentUser;
-    String fullname = null, email = null, location = null, firstname = null, lastname = null;
+    String fullname = null, email = null, location = null, firstname = null, lastname = null, facebookid = null;
     public static final List<String> mPermissions = new ArrayList<String>() {{
         add("public_profile");
         add("email");
@@ -108,13 +108,12 @@ public class LoginController extends ActionBarActivity {
                     location = object.getJSONObject("location").getString("name");
                     fullname = object.getString("name");
                     email = object.getString("email");
+                    facebookid = object.getString("id");
                     String[] parts = fullname.split("\\s+");
                     firstname = parts[0];
                     lastname = parts[1];
-                    //Profile Picture Code
-                    JSONObject picture = object.getJSONObject("picture");
-                    JSONObject data = picture.getJSONObject("data");
-                    String pictureUrl = data.getString("url");
+                    //Profile picture code
+                    String pictureUrl = "https://graph.facebook.com/" + facebookid + "/picture?type=large";
                     new ProfilePhotoAsync(pictureUrl).execute();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -218,21 +217,17 @@ public class LoginController extends ActionBarActivity {
     }
     public void onLoginButtonClick(View view) {
         //Check to make sure user is not already logged in
-        if (currentUser.getObjectId() == null) {
-            ParseUser.logInInBackground(String.valueOf(usernamefield.getText()), String.valueOf(passwordfield.getText()), new LogInCallback() {
+        ParseUser.logInInBackground(String.valueOf(usernamefield.getText()), String.valueOf(passwordfield.getText()), new LogInCallback() {
 
-                @Override
-                public void done(ParseUser user, ParseException e) {
-                    if (e == null) {
-                        goToNavigationScreen();
-                    } else {
-                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
-                    }
+            @Override
+            public void done(ParseUser user, ParseException e) {
+                if (e == null) {
+                    goToNavigationScreen();
+                } else {
+                    Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-            });
-        } else {
-            ParseUser.getCurrentUser().logOut();
-        }
+            }
+        });
     }
 
     public void onSignUpButtonClick(View view) {

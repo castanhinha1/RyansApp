@@ -1,29 +1,15 @@
 package com.parse.starter.ViewControllers;
 
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.facebook.AccessToken;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.starter.R;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import Models.Client;
-import Models.User;
 
 public class NavigationController extends AppCompatActivity {
 

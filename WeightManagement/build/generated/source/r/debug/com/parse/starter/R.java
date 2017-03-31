@@ -2142,13 +2142,14 @@ containing a value of this type.
         public static final int buttonPanel=0x7f0c003e;
         public static final int buttonVeryHeavy=0x7f0c0074;
         public static final int buttonVeryLight=0x7f0c0070;
+        public static final int calculateButton=0x7f0c0075;
         public static final int calendarbutton=0x7f0c0085;
         public static final int cancel_action=0x7f0c00a7;
         public static final int center=0x7f0c002c;
         public static final int checkbox=0x7f0c004c;
         public static final int chronometer=0x7f0c00af;
+        public static final int client_profile_addRemove=0x7f0c0067;
         public static final int client_profile_locationTV=0x7f0c0066;
-        public static final int client_profile_logoutButton=0x7f0c0067;
         public static final int client_profile_nameTV=0x7f0c0065;
         public static final int client_profile_profile_picture=0x7f0c0064;
         public static final int clientsTextView=0x7f0c0089;
@@ -2260,7 +2261,6 @@ containing a value of this type.
         public static final int standard=0x7f0c002a;
         public static final int status_bar_latest_event_content=0x7f0c00a8;
         public static final int submenuarrow=0x7f0c004f;
-        public static final int submitButton=0x7f0c0075;
         public static final int submit_area=0x7f0c0060;
         public static final int tabMode=0x7f0c000c;
         public static final int text=0x7f0c00b8;
