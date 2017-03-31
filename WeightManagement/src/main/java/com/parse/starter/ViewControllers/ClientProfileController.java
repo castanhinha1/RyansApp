@@ -40,7 +40,7 @@ public class ClientProfileController extends AppCompatActivity {
 
         currentUser = (User) ParseUser.getCurrentUser();
         clientList = new ArrayList<User>();
-        clientList.addAll(currentUser.getClients());
+        //clientList.addAll(currentUser.getClients());
         nameTV = (TextView) findViewById(R.id.client_profile_nameTV);
         locationTV = (TextView) findViewById(R.id.client_profile_locationTV);
         profilePictureView = (MyProfilePictureView) findViewById(R.id.client_profile_profile_picture);

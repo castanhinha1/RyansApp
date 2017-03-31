@@ -30,6 +30,7 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\Docu
 MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parseui-widget-android\0.0.1\AndroidManifest.xml:27:5-29:41
 	tools:overrideLibrary
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:16:9-45
 	android:targetSdkVersion
@@ -74,6 +75,7 @@ MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Cast
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parseui-widget-android\0.0.1\AndroidManifest.xml:31:5-20
 	android:label
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:29:9-41
 	android:allowBackup
