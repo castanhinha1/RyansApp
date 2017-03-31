@@ -2100,7 +2100,6 @@ containing a value of this type.
         public static final int yao_ming=0x7f02008f;
     }
     public static final class id {
-        public static final int ClientsListView=0x7f0c0091;
         public static final int action0=0x7f0c00aa;
         public static final int action_bar=0x7f0c0055;
         public static final int action_bar_activity_content=0x7f0c0000;
@@ -2118,7 +2117,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0052;
         public static final int action_mode_bar_stub=0x7f0c0051;
         public static final int action_mode_close_button=0x7f0c0036;
-        public static final int action_settings=0x7f0c00c0;
+        public static final int action_settings=0x7f0c00bf;
         public static final int action_text=0x7f0c00a9;
         public static final int actions=0x7f0c00b7;
         public static final int activity_chooser_view_content=0x7f0c0037;
@@ -2127,7 +2126,6 @@ containing a value of this type.
         public static final int activity_navigation_=0x7f0c0080;
         public static final int activity_sign_up=0x7f0c008c;
         public static final int add=0x7f0c0014;
-        public static final int addNewClientButton=0x7f0c0092;
         public static final int alertTitle=0x7f0c0043;
         public static final int always=0x7f0c001e;
         public static final int automatic=0x7f0c002f;
@@ -2162,7 +2160,6 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f0c009e;
         public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0c009d;
         public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0c009b;
-        public static final int container_for_fragment=0x7f0c00be;
         public static final int contentPanel=0x7f0c0044;
         public static final int current_client_fragment_container=0x7f0c009f;
         public static final int current_client_list_view=0x7f0c00a1;
@@ -2185,6 +2182,8 @@ containing a value of this type.
         public static final int facebook_button=0x7f0c007c;
         public static final int female=0x7f0c006f;
         public static final int firstname=0x7f0c008d;
+        public static final int fragment2_container=0x7f0c0091;
+        public static final int fragment3_container=0x7f0c0092;
         public static final int fragment_container=0x7f0c0068;
         public static final int goalbutton=0x7f0c0085;
         public static final int headingLabel=0x7f0c006a;
@@ -2273,7 +2272,7 @@ containing a value of this type.
         public static final int text2=0x7f0c00ba;
         public static final int textSpacerNoButtons=0x7f0c0047;
         public static final int textView=0x7f0c0079;
-        public static final int textView2=0x7f0c00bf;
+        public static final int textView2=0x7f0c00be;
         public static final int textViewObjectId=0x7f0c00a5;
         public static final int textViewUserName=0x7f0c00a4;
         public static final int time=0x7f0c00b2;
@@ -2368,8 +2367,7 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040040;
         public static final int select_dialog_singlechoice_material=0x7f040041;
         public static final int support_simple_spinner_dropdown_item=0x7f040042;
-        public static final int test_layout=0x7f040043;
-        public static final int title_bar=0x7f040044;
+        public static final int title_bar=0x7f040043;
     }
     public static final class menu {
         public static final int menu_main=0x7f0e0000;

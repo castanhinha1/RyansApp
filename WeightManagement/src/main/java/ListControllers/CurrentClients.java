@@ -14,6 +14,7 @@ import com.parse.starter.R;
 import com.parse.starter.ViewControllers.ClientProfileController;
 
 import ConfigClasses.ParseAdapterCustomList;
+import FragmentControllers.CurrentClientsOrTrainerFragment;
 import Models.User;
 
 /**
@@ -21,7 +22,6 @@ import Models.User;
  */
 
 public class CurrentClients extends ParseAdapterCustomList {
-
     Context context;
 
     public CurrentClients(Context context) {
@@ -56,13 +56,15 @@ public class CurrentClients extends ParseAdapterCustomList {
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ClientProfileController.class);
-                intent.putExtra("objectId", user.getObjectId());
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, ClientProfileController.class);
+//                intent.putExtra("objectId", user.getObjectId());
+//                context.startActivity(intent);
+
             }
         });
 
         return v;
     }
+
 }
 

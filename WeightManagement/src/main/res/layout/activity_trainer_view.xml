@@ -2,51 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/trainer_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context="com.parse.starter.ViewControllers.TrainerViewController"
     android:background="#3a8f3e">
-
-    <TextView
-        android:text="Clients"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/clientsTextView"
-        android:textSize="20sp"
-        android:textColor="#FFF"
-        android:fontFamily="sans-serif-condensed" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_below="@+id/clientsTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:id="@+id/ClientsListView"
-        android:layout_height="410dp" />
-
-    <Button
-        android:text="Add New Client"
-        android:layout_width="match_parent"
-        android:id="@+id/addNewClientButton"
-        android:background="#04988a"
-        android:textColor="#ffffff"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/ClientsListView"
-        android:layout_marginTop="20dp"
-        android:layout_height="40dp"
-        android:textStyle="normal|bold"
-        android:onClick="addNewClient" />
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="match_parent" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment2_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment3_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 
 </RelativeLayout>

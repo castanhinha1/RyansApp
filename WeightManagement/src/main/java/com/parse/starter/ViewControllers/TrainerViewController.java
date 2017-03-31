@@ -3,6 +3,7 @@ package com.parse.starter.ViewControllers;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -58,5 +59,4 @@ public class TrainerViewController extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), NewClientController.class);
         startActivity(intent);
     }
-
 }

@@ -2,6 +2,7 @@ package FragmentControllers;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,21 +21,32 @@ import Models.User;
 
 public class CurrentClientsOrTrainerFragment extends Fragment {
 
+    OnUserSelected activityCallBack;
     TextView labelTV;
     ListView listview;
     CurrentClients adapter;
     User currentUser;
+    String objectId;
+
+    public interface OnUserSelected {
+        public void getUserSelected(String objectId);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
         currentUser = (User) ParseUser.getCurrentUser();
-        labelTV = (TextView) rootView.findViewById(R.id.current_client_text_view_name);
+        labelTV = (TextView) rootView.findViewById(R.id.current_client_name_tv);
+        labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
         listview = (ListView) rootView.findViewById(R.id.current_client_list_view);
         adapter = new CurrentClients(getActivity());
         listview.setAdapter(adapter);
         return rootView;
+    }
+
+    public void getSelectedUser(String objectId){
+        this.objectId = objectId;
     }
 }
 
