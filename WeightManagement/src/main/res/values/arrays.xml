@@ -40,4 +40,15 @@
     <item>http://knowyourmeme.com/memes/cereal-guy</item>
     <item>http://knowyourmeme.com/memes/fck-yea</item>
   </string-array>
+  <string-array name="Planets">
+    <item>Sun</item>
+    <item>Mercury</item>
+    <item>Venus</item>
+    <item>Earth</item>
+    <item>Mars</item>
+    <item>Jupiter</item>
+    <item>Saturn</item>
+    <item>Uranus</item>
+    <item>Neptune</item>
+  </string-array>
 </resources>

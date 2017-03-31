@@ -1,5 +1,6 @@
 package ListControllers;
 
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -35,7 +36,6 @@ public class CurrentClients extends ParseAdapterCustomList {
         });
         this.context = context;
     }
-
 
     @Override
     public View getItemView(final User user, View v, ViewGroup parent){
