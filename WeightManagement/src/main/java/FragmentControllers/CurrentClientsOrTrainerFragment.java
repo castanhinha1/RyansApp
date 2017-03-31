@@ -28,10 +28,10 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.activity_trainer_view, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
         currentUser = (User) ParseUser.getCurrentUser();
-        labelTV = (TextView) rootView.findViewById(R.id.clientsTextView);
-        listview = (ListView) rootView.findViewById(R.id.ClientsListView);
+        labelTV = (TextView) rootView.findViewById(R.id.current_client_text_view_name);
+        listview = (ListView) rootView.findViewById(R.id.current_client_list_view);
         adapter = new CurrentClients(getActivity());
         listview.setAdapter(adapter);
         return rootView;
