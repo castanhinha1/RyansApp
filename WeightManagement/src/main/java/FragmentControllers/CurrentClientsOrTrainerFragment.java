@@ -1,12 +1,16 @@
 package FragmentControllers;
 
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.media.Image;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -14,7 +18,11 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 import com.parse.ParseUser;
 import com.parse.starter.R;
+import com.parse.starter.ViewControllers.TrainerViewController;
 
+import java.util.List;
+
+import ConfigClasses.MyProfilePictureView;
 import ConfigClasses.ParseAdapterCustomList;
 import Models.User;
 
@@ -28,19 +36,32 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     ListView listview;
     CurrentClients adapter;
     User currentUser;
+    SwipeRefreshLayout swipeContainer;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
+        swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
         currentUser = (User) ParseUser.getCurrentUser();
-        labelTV = (TextView) rootView.findViewById(R.id.current_client_name_tv);
-        labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
         listview = (ListView) rootView.findViewById(R.id.current_client_list_view);
         adapter = new CurrentClients(getActivity());
+        labelTV = new TextView(getActivity());
+        labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
+        listview.addHeaderView(labelTV);
         listview.setAdapter(adapter);
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                adapter.loadObjects();
+            }
+        });
+        // Configure the refreshing colors
+        swipeContainer.setColorSchemeResources(android.R.color.holo_green_light);
         return rootView;
     }
-    class CurrentClients extends ParseAdapterCustomList {
+
+
+    class CurrentClients extends ParseAdapterCustomList implements ParseQueryAdapter.OnQueryLoadListener {
         Context context;
 
         public CurrentClients(Context context) {
@@ -54,7 +75,20 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
 
             });
             this.context = context;
+            addOnQueryLoadListener(this);
         }
+
+        @Override
+        public void onLoading() {
+            swipeContainer.setRefreshing(true);
+        }
+
+        @Override
+        public void onLoaded(List objects, Exception e) {
+            swipeContainer.setRefreshing(false);
+        }
+
+
         @Override
         public View getItemView(final User user, View v, ViewGroup parent){
             if (v == null){
@@ -68,7 +102,11 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
 
             //Add the objectid
             TextView objectId = (TextView) v.findViewById(R.id.current_client_object_id);
-            objectId.setText(user.getObjectId());
+            objectId.setText(user.getLocation());
+
+            //Add the image
+            MyProfilePictureView imageView = (MyProfilePictureView) v.findViewById(R.id.imageView3);
+            imageView.setImageBitmap(imageView.getRoundedBitmap(user.getProfilePicture()));
 
             //On click listener for selection
             v.setOnClickListener(new View.OnClickListener() {
@@ -77,14 +115,12 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
                     //Intent intent = new Intent(context, ClientProfileController.class);
                     //intent.putExtra("objectId", user.getObjectId());
                     //context.startActivity(intent);
-                    Log.i("AppInfo", "User selected: "+user.getObjectId());
-                    //((TrainerViewController) getActivity()).onUserSelected(user.getObjectId());
+                    ((TrainerViewController) getActivity()).onUserSelected(user.getObjectId());
 
                 }
             });
             return v;
         }
-
     }
 }
 

@@ -12,7 +12,6 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 import com.parse.ParseUser;
 import com.parse.starter.R;
-import com.parse.starter.ViewControllers.ClientProfileController;
 
 import ConfigClasses.ParseAdapterCustomList;
 import Models.User;
@@ -57,9 +56,9 @@ public class NewClients extends ParseAdapterCustomList {
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ClientProfileController.class);
-                intent.putExtra("objectId", user.getObjectId());
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, ClientProfileController.class);
+//                intent.putExtra("objectId", user.getObjectId());
+//                context.startActivity(intent);
             }
         });
 

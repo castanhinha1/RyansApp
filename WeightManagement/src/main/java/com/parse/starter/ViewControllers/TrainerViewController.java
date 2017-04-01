@@ -1,22 +1,25 @@
 package com.parse.starter.ViewControllers;
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
 
 import com.parse.starter.R;
 
 import FragmentControllers.CurrentClientsOrTrainerFragment;
 import FragmentControllers.SelectedUserDetailsFragment;
 
-public class TrainerViewController extends AppCompatActivity {
+public class TrainerViewController extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trainer_view);
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
         if (findViewById(R.id.fragment_container) != null) {
             if (savedInstanceState != null) {
@@ -26,15 +29,19 @@ public class TrainerViewController extends AppCompatActivity {
             CurrentClientsOrTrainerFragment firstFragment = new CurrentClientsOrTrainerFragment();
 
             // Add the fragment to the 'fragment_container' FrameLayout
-            getFragmentManager().beginTransaction().add(R.id.fragment_container, firstFragment).commit();
+            fragmentTransaction.replace(R.id.fragment_container, firstFragment);
+            fragmentTransaction.commit();
         }
     }
     public void onUserSelected(String objectId) {
-        Log.i("AppInfo", "The User that was selected is: "+objectId);
+        Log.i("AppInfo", "User objectId: "+objectId);
+        Bundle bundle = new Bundle();
+        bundle.putString("userId", objectId);
         SelectedUserDetailsFragment secondFragment = new SelectedUserDetailsFragment();
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, secondFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        secondFragment.setArguments(bundle);
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, secondFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }

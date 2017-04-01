@@ -11,7 +11,6 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 import com.parse.ParseUser;
 import com.parse.starter.R;
-import com.parse.starter.ViewControllers.ClientProfileController;
 
 import org.w3c.dom.Text;
 
