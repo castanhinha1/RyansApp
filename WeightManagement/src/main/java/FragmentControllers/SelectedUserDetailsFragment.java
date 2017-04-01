@@ -26,9 +26,6 @@ import java.util.List;
 import ConfigClasses.MyProfilePictureView;
 import Models.User;
 
-/**
- * Created by Dylan Castanhinha on 3/31/2017.
- */
 
 public class SelectedUserDetailsFragment extends Fragment {
 
@@ -63,7 +60,6 @@ public class SelectedUserDetailsFragment extends Fragment {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                Log.i("AppInfo", "Relation Updated");
                                 addRemovebutton.setText("Add Client");
                                 isClient = false;
                             } else {
@@ -78,7 +74,6 @@ public class SelectedUserDetailsFragment extends Fragment {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                Log.i("AppInfo", "Relation saved");
                                 addRemovebutton.setText("Delete Client");
                                 isClient = true;
                             } else {
@@ -100,7 +95,6 @@ public class SelectedUserDetailsFragment extends Fragment {
             @Override
             public void done(User object, ParseException e) {
                 if (object == null){
-                    //Log.i("AppInfo", "No user with that objectid");
                 } else {
                     displayedUser = object;
                     setView();

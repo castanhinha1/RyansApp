@@ -34,7 +34,6 @@ public class TrainerViewController extends Activity {
         }
     }
     public void onUserSelected(String objectId) {
-        Log.i("AppInfo", "User objectId: "+objectId);
         Bundle bundle = new Bundle();
         bundle.putString("userId", objectId);
         SelectedUserDetailsFragment secondFragment = new SelectedUserDetailsFragment();

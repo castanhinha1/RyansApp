@@ -15,19 +15,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="Code cleanup">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/WeightManagement/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
     </list>
     <manually-removed-from-ignored>
       <directory path="build/" />
@@ -60,7 +51,35 @@
     <favorites_list name="Parse-Starter-Project-1.13.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="TrainerViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectedUserDetailsFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+              <folding>
+                <element signature="e#3563#4050#0" expanded="true" />
+                <element signature="e#4049#4050#0" expanded="true" />
+                <element signature="e#4379#4800#0" expanded="true" />
+                <element signature="e#4799#4800#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1890,13 +1909,14 @@
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/CurrentDetailsController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/UserCustomClass.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/UserCustomList.java" />
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/MyProfilePictureView.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NewClientController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/WeightManagementMain.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_client_profile.xml" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/ClientProfileController.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java" />
       </list>
     </option>
   </component>
@@ -2107,6 +2127,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.13.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeightManagement" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentControllers" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2602,7 +2640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490940406358</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Trainers can add and remove clients">
+      <created>1491074344396</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1491074344396</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2616,7 +2661,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1053" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2635,7 +2680,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2709,11 +2754,12 @@
     <MESSAGE value="Added button controllers and current details view" />
     <MESSAGE value="Added images" />
     <MESSAGE value="Bug fixes" />
-    <MESSAGE value="Code cleanup" />
     <MESSAGE value="added title bar" />
     <MESSAGE value="Before I changed the profile picture view class and made the downloaded image a little bigger" />
     <MESSAGE value="Before creating client list class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Before creating client list class" />
+    <MESSAGE value="Trainers can add and remove clients" />
+    <MESSAGE value="Code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2722,15 +2768,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/values-v23/values-v23.xml" />
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse/parsefacebookutils-v4-android/1.10.3/a374b6ea162acd4db914f48aa9b888c916734bc3/parsefacebookutils-v4-android-1.10.3-sources.jar!/com/parse/ParseFacebookUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/values/strings.xml" />
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/SignUpController.java" />
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/Controllers/WeightManagement.java" />
@@ -2823,6 +2860,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3077">
           <caret line="227" column="17" selection-start-line="227" selection-start-column="17" selection-end-line="227" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getUserDetailsFromParse#0;class#LoginController#0" expanded="false" />
+            <element signature="method#onSignUpButtonClick#0;class#LoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2847,6 +2889,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2854,6 +2897,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2919,13 +2963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -2952,12 +2989,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/YourProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/AddNewClientsOrTrainerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/CurrentClientsOrTrainerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="57" />
+        <state relative-caret-position="570">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+          <folding>
+            <element signature="e#3563#4050#0" expanded="true" />
+            <element signature="e#4049#4050#0" expanded="true" />
+            <element signature="e#4379#4800#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
           </folding>
         </state>
       </provider>
