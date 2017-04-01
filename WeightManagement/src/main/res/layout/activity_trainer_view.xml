@@ -12,15 +12,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/fragment2_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/fragment3_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
 </RelativeLayout>
