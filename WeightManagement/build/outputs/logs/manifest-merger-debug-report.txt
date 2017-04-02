@@ -17,20 +17,20 @@ ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\Wei
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml
 uses-sdk
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:13:5-16:48
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\AndroidManifest.xml:21:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parsefacebookutils-v4-android\1.10.3\AndroidManifest.xml:16:5-18:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parseui-widget-android\0.0.1\AndroidManifest.xml:27:5-29:41
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\f4cb5315e245dfda097f43bdc69db3ed49f84cb3\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\3feb380ea9371953764c3466cd6cace74cd4de57\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\0b3880f2d2f8668ff327372b53e8a5dd110f9d81\output\AndroidManifest.xml:21:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Dylan Castanhinha\.android\build-cache\1cb63630e49237d6be0ef5547a09e62ee61eb82b\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\e685ec70f2a14dc63309f1a13650a7d5238b92fc\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\8c30eb25b909c44ddb5bad73a5bc29e5b4591518\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\e56a30c264f929f8fabf34225df5148508d30374\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\7f25e0a7eb6d1d94a0b0044a98ac67dada405c6d\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Castanhinha\.android\build-cache\3a2b82366e8715abf927f0ac8da775b6691cfe88\output\AndroidManifest.xml:16:5-18:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\ea38eac148dc89aa615c1325dc73b689a8c27c61\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\e3e93025a32d51f691d91472a286d85b0e423639\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\76b52915a2d8ee8ec0e7b7ad7bc4983d9fb4a30d\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\c3f83ee44ffca2b868eed3b45a5252d9f90397c9\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\.android\build-cache\8544be5b29b245ef36f894808058b7bd5f1c7df6\output\AndroidManifest.xml:27:5-29:41
 	tools:overrideLibrary
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:16:9-45
 	android:targetSdkVersion
@@ -63,19 +63,19 @@ ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\Wei
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:23:30-85
 application
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:25:5-63:19
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\AndroidManifest.xml:23:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\AndroidManifest.xml:28:5-20
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\AndroidManifest.xml:25:5-20
-MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parsefacebookutils-v4-android\1.10.3\AndroidManifest.xml:20:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\exploded-aar\com.parse\parseui-widget-android\0.0.1\AndroidManifest.xml:31:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\f4cb5315e245dfda097f43bdc69db3ed49f84cb3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\3feb380ea9371953764c3466cd6cace74cd4de57\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\0b3880f2d2f8668ff327372b53e8a5dd110f9d81\output\AndroidManifest.xml:23:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Dylan Castanhinha\.android\build-cache\1cb63630e49237d6be0ef5547a09e62ee61eb82b\output\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\e685ec70f2a14dc63309f1a13650a7d5238b92fc\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\8c30eb25b909c44ddb5bad73a5bc29e5b4591518\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\e56a30c264f929f8fabf34225df5148508d30374\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\7f25e0a7eb6d1d94a0b0044a98ac67dada405c6d\output\AndroidManifest.xml:25:5-20
+MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Castanhinha\.android\build-cache\3a2b82366e8715abf927f0ac8da775b6691cfe88\output\AndroidManifest.xml:20:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\ea38eac148dc89aa615c1325dc73b689a8c27c61\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\76b52915a2d8ee8ec0e7b7ad7bc4983d9fb4a30d\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\c3f83ee44ffca2b868eed3b45a5252d9f90397c9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.parse:parseui-widget-android:0.0.1] C:\Users\Dylan Castanhinha\.android\build-cache\8544be5b29b245ef36f894808058b7bd5f1c7df6\output\AndroidManifest.xml:31:5-20
 	android:label
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:29:9-41
 	android:allowBackup
