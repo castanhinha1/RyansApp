@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright (c) 2015 Razeware LLC
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-  -->
 <resources>
   <color name="blue_grey_800_50p">#E237474F</color>
   <color name="background">#3a8f3e</color>
+  <color name="ColorPrimary">#FF5722</color>
+  <color name="ColorPrimaryDark">#E64A19</color>
+
+  <color name="palette_darkprimarycolor">#388d3c</color>
+  <color name="palette_primarycolor">#4bae4f</color>
+  <color name="palette_lightprimarycolor">#c6e4c7</color>
+  <color name="palette_texticonscolor">#fdfdfd</color>
+  <color name="palette_accentcolor">#009587</color>
+  <color name="palette_primarytextcolor">#212121</color>
+  <color name="palette_secondarytextcolor">#747474</color>
+  <color name="palette_dividercolor">#bcbcbc</color>
 </resources>

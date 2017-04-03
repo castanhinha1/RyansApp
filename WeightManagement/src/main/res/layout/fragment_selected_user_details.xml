@@ -9,7 +9,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#3a8f3e">
 
-    <include layout="@layout/title_bar" />
+    <include layout="@layout/tool_bar" />
 
     <ConfigClasses.MyProfilePictureView
         android:id="@+id/client_profile_profile_picture"

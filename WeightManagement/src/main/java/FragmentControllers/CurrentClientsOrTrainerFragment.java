@@ -72,7 +72,6 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
                     query.whereNotEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
                     return query;
                 }
-
             });
             this.context = context;
             addOnQueryLoadListener(this);

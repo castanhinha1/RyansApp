@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,8 +8,6 @@
     android:layout_alignParentStart="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#3a8f3e">
-
-    <include layout="@layout/title_bar" />
 
     <ConfigClasses.MyProfilePictureView
         android:id="@+id/profile_picture"
@@ -47,8 +44,9 @@
         android:text="Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/trainerCheckBox"
+        android:layout_marginTop="15dp"
         android:id="@+id/logoutButton"
         android:onClick="logoutButtonClicked"
         android:textColor="@android:color/white"
@@ -69,4 +67,3 @@
         android:layout_marginLeft="125dp" />
 
 </RelativeLayout>
-
