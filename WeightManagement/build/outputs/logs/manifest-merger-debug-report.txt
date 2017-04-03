@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:9:1-64:12
+ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:9:1-62:12
 	package
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:11:5-32
 		INJECTED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml
@@ -65,7 +65,7 @@ ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\Wei
 	android:name
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:23:30-85
 application
-ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:25:5-62:19
+ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:25:5-60:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Dylan Castanhinha\.android\build-cache\1cb63630e49237d6be0ef5547a09e62ee61eb82b\output\AndroidManifest.xml:28:5-20
 MERGED from [com.parse:parsefacebookutils-v4-android:1.10.3] C:\Users\Dylan Castanhinha\.android\build-cache\3a2b82366e8715abf927f0ac8da775b6691cfe88\output\AndroidManifest.xml:20:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Dylan Castanhinha\.android\build-cache\ea38eac148dc89aa615c1325dc73b689a8c27c61\output\AndroidManifest.xml:9:5-20
@@ -151,18 +151,10 @@ activity#com.parse.starter.ViewControllers.HomeController
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:58:9-68
 	android:name
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:58:19-65
-activity#com.parse.starter.ViewControllers.YourProfileController
+activity#com.parse.starter.ViewControllers.TrainerViewController
 ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:59:9-75
 	android:name
 		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:59:19-72
-activity#com.parse.starter.ViewControllers.TrainerViewController
-ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:60:9-75
-	android:name
-		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:60:19-72
-activity#com.parse.starter.ViewControllers.NewClientController
-ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:61:9-83
-	android:name
-		ADDED from C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\src\main\AndroidManifest.xml:61:19-70
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\Dylan Castanhinha\.android\build-cache\6ff0eed05dd02ebf32c05d20b865dbc24389f073\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Dylan Castanhinha\.android\build-cache\e80b3348a67f0681826205a751faa18245259ece\output\AndroidManifest.xml:25:5-27:34

@@ -11,24 +11,18 @@
     tools:context="com.parse.starter.ViewControllers.TrainerViewController"
     android:background="#3a8f3e">
 
-    <TextView
-        android:text="Clients"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/newClientsTextView"
-        android:textSize="20sp"
-        android:textColor="#FFF"
-        android:fontFamily="sans-serif-condensed" />
-
-    <ListView
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container_for_new_client"
         android:layout_width="match_parent"
-        android:layout_below="@+id/clientsTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:id="@+id/newClientsListView"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/add_new_client_list_view"
+            android:layout_marginTop="10dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </RelativeLayout>

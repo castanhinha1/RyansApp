@@ -11,4 +11,7 @@
         <item name="android:textColorPrimary">#4bae4f</item>
     </style>
 
+    <style name="adduserbutton" parent="Widget.AppCompat.ImageButton">
+    </style>
+
 </resources>

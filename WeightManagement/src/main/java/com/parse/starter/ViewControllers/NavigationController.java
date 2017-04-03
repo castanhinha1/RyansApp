@@ -1,6 +1,7 @@
 package com.parse.starter.ViewControllers;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
 
 import com.parse.ParseUser;
@@ -22,21 +24,24 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
+import FragmentControllers.AddNewClientsOrTrainerFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
+import FragmentControllers.SelectedUserDetailsFragment;
 import FragmentControllers.YourProfileFragment;
 
-public class NavigationController extends AppCompatActivity {
+public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected {
 
     private Toolbar toolbar;
+    Bundle savedInstanceState1;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        this.savedInstanceState1 = savedInstanceState;
         //Toolbar (Top)
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
-
         //Navigation Bar (Bottom)
         final BottomBar navigationBar = (BottomBar) findViewById(R.id.bottomBar);
         navigationBar.setOnTabSelectListener(new OnTabSelectListener() {
@@ -47,7 +52,7 @@ public class NavigationController extends AppCompatActivity {
                 } else if (tabId == R.id.goal) {
                     Log.i("AppInfo", "Goal button pressed");
                 } else if (tabId == R.id.calendar) {
-                    Log.i("AppInfo", "Calendar button pressed");
+                    calendar(savedInstanceState);
                 } else if (tabId == R.id.trainer) {
                     trainer(savedInstanceState);
                 } else if (tabId == R.id.profile) {
@@ -65,7 +70,7 @@ public class NavigationController extends AppCompatActivity {
                 } else if (tabId == R.id.goal) {
                     Log.i("AppInfo", "Goal button pressed");
                 } else if (tabId == R.id.calendar) {
-                    Log.i("AppInfo", "Calendar button pressed");
+                    calendar(savedInstanceState);
                 } else if (tabId == R.id.trainer) {
                     trainer(savedInstanceState);
                 } else if (tabId == R.id.profile) {
@@ -98,20 +103,68 @@ public class NavigationController extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("Log Out?")
-                .setMessage("Are you sure you want to log out?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        ParseUser.getCurrentUser().logOut();
-                        finish();
-                    }
+        int count = getFragmentManager().getBackStackEntryCount();
+        if (count == 0){
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Log Out?")
+                    .setMessage("Are you sure you want to log out?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            ParseUser.getCurrentUser().logOut();
+                            finish();
+                        }
 
-                })
-                .setNegativeButton("No", null)
-                .show();
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
+    }
+
+    public void calendar(Bundle savedInstanceState){
+        Log.i("AppInfo", "Calendar Button Clicked");
+    }
+
+    @Override
+    public void onAddUserClicked() {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if (findViewById(R.id.fragment_container) != null) {
+            if (savedInstanceState1 != null) {
+                return;
+            }
+            // Create a new Fragment to be placed in the activity layout
+            AddNewClientsOrTrainerFragment addNewClientsOrTrainerFragment = new AddNewClientsOrTrainerFragment();
+            // Add the fragment to the 'fragment_container' FrameLayout
+            fragmentTransaction.replace(R.id.fragment_container, addNewClientsOrTrainerFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+    }
+
+    @Override
+    public void onUserSelected(String userId) {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if (findViewById(R.id.fragment_container) != null) {
+            if (savedInstanceState1 != null) {
+                return;
+            }
+            // Create a new Fragment to be placed in the activity layout
+            SelectedUserDetailsFragment selectedUserDetailsFragment = new SelectedUserDetailsFragment();
+            //Add selected user object id
+            Bundle args = new Bundle();
+            args.putString("userId", userId);
+            selectedUserDetailsFragment.setArguments(args);
+            // Add the fragment to the 'fragment_container' FrameLayout
+            fragmentTransaction.replace(R.id.fragment_container_popup, selectedUserDetailsFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
 
     public void trainer(Bundle savedInstanceState) {
@@ -144,5 +197,6 @@ public class NavigationController extends AppCompatActivity {
         }
 
     }
+
 }
 

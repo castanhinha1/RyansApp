@@ -2,7 +2,7 @@
 <resources>
   <color name="blue_grey_800_50p">#E237474F</color>
   <color name="background">#3a8f3e</color>
-  <color name="ColorPrimary">#FF5722</color>
+  <color name="ColorPrimary">#ff5722</color>
   <color name="ColorPrimaryDark">#E64A19</color>
 
   <color name="palette_darkprimarycolor">#388d3c</color>

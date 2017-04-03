@@ -11,7 +11,7 @@
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="bb_bottom_bar_is_portrait_mode">true</bool>
     <bool name="bb_bottom_bar_is_tablet_mode">false</bool>
-    <color name="ColorPrimary">#FF5722</color>
+    <color name="ColorPrimary">#ff5722</color>
     <color name="ColorPrimaryDark">#E64A19</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -2280,6 +2280,8 @@
         <item name="passwordToggleDrawable">@drawable/design_password_eye</item>
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
+    </style>
+    <style name="adduserbutton" parent="Widget.AppCompat.ImageButton">
     </style>
     <style name="com_facebook_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/com_facebook_button_background</item>

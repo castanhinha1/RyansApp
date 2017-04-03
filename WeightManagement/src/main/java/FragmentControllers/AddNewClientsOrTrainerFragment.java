@@ -4,7 +4,12 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
@@ -33,14 +38,42 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
     NewClientSearch adapter;
     User currentUser;
     SwipeRefreshLayout swipeContainer;
+    OnUserSelected activityCallBack;
+
+    public interface OnUserSelected {
+        public void onUserSelected(String userId);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            activityCallBack = (OnUserSelected) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_add_new_clients, container, false);
 
-        swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
+        //Toolbar top
+        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
+        toolbar.setNavigationIcon(R.drawable.ic_back_button);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().popBackStack();
+                toolbar.setNavigationIcon(null);
+            }
+        });
+
+        //View items
+        swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipe_container_for_new_client);
         currentUser = (User) ParseUser.getCurrentUser();
-        listview = (ListView) rootView.findViewById(R.id.newClientsListView);
+        listview = (ListView) rootView.findViewById(R.id.add_new_client_list_view);
         adapter = new NewClientSearch(getActivity());
         labelTV = new TextView(getActivity());
         labelTV.setText("Local Clients");
@@ -100,7 +133,7 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ((TrainerViewController) getActivity()).onUserSelected(user.getObjectId());
+                    activityCallBack.onUserSelected(user.getObjectId());
                 }
             });
             return v;

@@ -1,5 +1,6 @@
 package FragmentControllers;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -10,12 +11,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
+import com.parse.ParseRelation;
 import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.parse.starter.ViewControllers.TrainerViewController;
@@ -37,6 +42,27 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     CurrentClients adapter;
     User currentUser;
     SwipeRefreshLayout swipeContainer;
+    ImageButton imageButton;
+    OnAddNewUserButtonClicked activityCallback;
+    AddNewClientsOrTrainerFragment.OnUserSelected activityCallBack;
+
+    public interface OnAddNewUserButtonClicked {
+        public void onAddUserClicked();
+    }
+    public interface OnUserSelected {
+        public void onUserSelected(String userId);
+    }
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            activityCallback = (OnAddNewUserButtonClicked) context;
+            activityCallBack = (AddNewClientsOrTrainerFragment.OnUserSelected) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -44,37 +70,47 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
         swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
         currentUser = (User) ParseUser.getCurrentUser();
         listview = (ListView) rootView.findViewById(R.id.current_client_list_view);
+        imageButton = (ImageButton) rootView.findViewById(R.id.addnewuser);
+        imageButton.setOnClickListener(new AddNewClientButtonListener());
         adapter = new CurrentClients(getActivity());
         labelTV = new TextView(getActivity());
         labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
         listview.addHeaderView(labelTV);
         listview.setAdapter(adapter);
-        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                adapter.loadObjects();
-            }
-        });
+        swipeContainer.setOnRefreshListener(new SwipeToRefresh());
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(android.R.color.holo_green_light);
         return rootView;
     }
 
+    private class SwipeToRefresh implements SwipeRefreshLayout.OnRefreshListener{
+
+        @Override
+        public void onRefresh() {
+            adapter.loadObjects();
+        }
+    }
+
+    private class AddNewClientButtonListener implements ImageButton.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            activityCallback.onAddUserClicked();
+        }
+    }
+
 
     class CurrentClients extends ParseAdapterCustomList implements ParseQueryAdapter.OnQueryLoadListener {
         Context context;
-
-        public CurrentClients(Context context) {
-            super(context, new ParseQueryAdapter.QueryFactory<User>() {
-                public ParseQuery<User> create() {
-                    ParseQuery<User> query = ParseQuery.getQuery(User.class);
-                    query.whereEqualTo("trainerstatus", false);
-                    query.whereNotEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-                    return query;
-                }
+        public CurrentClients(final Context context){
+            super(context, new ParseQueryAdapter.QueryFactory<User>(){
+               public ParseQuery<User> create() {
+                   ParseRelation<User> relation = currentUser.getRelation("client");
+                   ParseQuery<User> query = relation.getQuery();
+                   query.whereEqualTo("objectId", false);
+                   query.whereNotEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
+                   return query;
+               }
             });
-            this.context = context;
-            addOnQueryLoadListener(this);
         }
 
         @Override
@@ -111,11 +147,7 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Intent intent = new Intent(context, ClientProfileController.class);
-                    //intent.putExtra("objectId", user.getObjectId());
-                    //context.startActivity(intent);
-                    ((TrainerViewController) getActivity()).onUserSelected(user.getObjectId());
-
+                    activityCallBack.onUserSelected(user.getObjectId());
                 }
             });
             return v;
