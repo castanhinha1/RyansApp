@@ -21,34 +21,5 @@
   THE SOFTWARE.
   -->
 <resources>
-  <array name="images">
-    <item>@drawable/cereal_guy</item>
-    <item>@drawable/f_yeah</item>
-  </array>
 
-  <string-array name="names">
-    <item>Cereal Guy</item>
-    <item>F!@# Yeah</item>
-  </string-array>
-
-  <string-array name="descriptions">
-    <item>Cereal Guy is a stick figure character commonly used on image boards and discussion forums as a multi-purpose reaction face.</item>
-    <item>F!@# Yeah is a series of four-pane cartoon strips featuring a stick figure looking rather self-complacent and quite frankly, for all the right reasons. Originally posted via /b/ board on February 11, 2010, these cartoons illustrate all sorts of triumphant moments in our daily lives that make us feel awesome, like when you wake up a few seconds before the morning alarm goes off. This phenomenon can be also seen as the antithesis to Rageguy comics, another four-pane series originating from 4chan circa late 2008.</item>
-  </string-array>
-
-  <string-array name="urls">
-    <item>http://knowyourmeme.com/memes/cereal-guy</item>
-    <item>http://knowyourmeme.com/memes/fck-yea</item>
-  </string-array>
-  <string-array name="Planets">
-    <item>Sun</item>
-    <item>Mercury</item>
-    <item>Venus</item>
-    <item>Earth</item>
-    <item>Mars</item>
-    <item>Jupiter</item>
-    <item>Saturn</item>
-    <item>Uranus</item>
-    <item>Neptune</item>
-  </string-array>
 </resources>

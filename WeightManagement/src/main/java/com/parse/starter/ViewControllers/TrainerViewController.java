@@ -20,14 +20,12 @@ public class TrainerViewController extends Activity {
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-
         if (findViewById(R.id.fragment_container) != null) {
             if (savedInstanceState != null) {
                 return;
             }
             // Create a new Fragment to be placed in the activity layout
             CurrentClientsOrTrainerFragment firstFragment = new CurrentClientsOrTrainerFragment();
-
             // Add the fragment to the 'fragment_container' FrameLayout
             fragmentTransaction.replace(R.id.fragment_container, firstFragment);
             fragmentTransaction.commit();

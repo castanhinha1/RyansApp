@@ -1,26 +1,66 @@
 package com.parse.starter.ViewControllers;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TabHost;
 
 import com.parse.ParseUser;
 import com.parse.starter.R;
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnTabReselectListener;
+import com.roughike.bottombar.OnTabSelectListener;
 
-public class NavigationController extends AppCompatActivity {
-
-    String location;
-    String name;
-    String email;
+public class NavigationController extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+
+        final BottomBar navigationBar = (BottomBar) findViewById(R.id.bottomBar);
+        navigationBar.setOnTabSelectListener(new OnTabSelectListener() {
+            @Override
+            public void onTabSelected(@IdRes int tabId) {
+                if (tabId == R.id.home) {
+                    Log.i("AppInfo", "Home button pressed");
+                } else if (tabId == R.id.goal){
+                    Log.i("AppInfo", "Goal button pressed");
+                } else if (tabId == R.id.calendar){
+                    Log.i("AppInfo", "Calendar button pressed");
+                } else if (tabId == R.id.trainer){
+                    Log.i("AppInfo", "Trainer button pressed");
+                } else if (tabId == R.id.profile){
+                    Log.i("AppInfo", "Profile button pressed");
+                } else{
+                    Log.i("AppInfo", "Home button pressed");
+                }
+            }
+        });
+        navigationBar.setOnTabReselectListener(new OnTabReselectListener() {
+            @Override
+            public void onTabReSelected(@IdRes int tabId) {
+                if (tabId == R.id.home) {
+                    Log.i("AppInfo", "Home button pressed");
+                } else if (tabId == R.id.goal){
+                    Log.i("AppInfo", "Goal button pressed");
+                } else if (tabId == R.id.calendar){
+                    Log.i("AppInfo", "Calendar button pressed");
+                } else if (tabId == R.id.trainer){
+                    Log.i("AppInfo", "Trainer button pressed");
+                } else if (tabId == R.id.profile){
+                    Log.i("AppInfo", "Profile button pressed");
+                } else{
+                    Log.i("AppInfo", "Home button pressed");
+                }
+            }
+        });
     }
 
     @Override

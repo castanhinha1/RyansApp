@@ -27,7 +27,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <meta-data
             android:name="com.parse.APPLICATION_ID"
             android:value="@string/parse_app_id" />
@@ -58,8 +58,7 @@
         <activity android:name=".ViewControllers.HomeController" />
         <activity android:name=".ViewControllers.YourProfileController" />
         <activity android:name=".ViewControllers.TrainerViewController" />
-        <activity android:name=".ViewControllers.NewClientController" />
-        <activity android:name=".ViewControllers.ClientProfileController"></activity>
+        <activity android:name=".ViewControllers.NewClientController" ></activity>
     </application>
 
 </manifest>
