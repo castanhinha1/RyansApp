@@ -116,16 +116,6 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
             addOnQueryLoadListener(this);
         }
 
-        //This is a test method to see if I can pull from github
-        public void testMethod(){
-
-            Log.i("AppInfo", "Again a test method");
-            Log.i("AppInfo", "Test to see if i can pull from my desktop");
-            Log.i("AppInfo", "Again a test method");
-            Log.i("AppInfo", "Test to see if i can pull from my desktop");
-
-        }
-
 
         @Override
         public void onLoading() {
