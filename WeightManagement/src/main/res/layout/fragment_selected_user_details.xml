@@ -28,7 +28,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:src="@drawable/ic_exit_window"
-                android:background="@null"/>
+                android:background="@null"
+                android:id="@+id/dismiss_button"/>
 
             <ConfigClasses.MyProfilePictureView
                 android:id="@+id/client_profile_profile_picture"

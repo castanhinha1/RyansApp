@@ -18,18 +18,26 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
+import java.util.List;
+
 import FragmentControllers.AddNewClientsOrTrainerFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
 import FragmentControllers.SelectedUserDetailsFragment;
 import FragmentControllers.YourProfileFragment;
+import Models.User;
 
-public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected {
+public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected, SelectedUserDetailsFragment.DismissDialogListener {
 
     private Toolbar toolbar;
     Bundle savedInstanceState1;
@@ -147,7 +155,7 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
     }
 
     @Override
-    public void onUserSelected(String userId) {
+    public void onDialogDismissal() {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         if (findViewById(R.id.fragment_container) != null) {
@@ -155,16 +163,18 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
                 return;
             }
             // Create a new Fragment to be placed in the activity layout
-            SelectedUserDetailsFragment selectedUserDetailsFragment = new SelectedUserDetailsFragment();
-            //Add selected user object id
-            Bundle args = new Bundle();
-            args.putString("userId", userId);
-            selectedUserDetailsFragment.setArguments(args);
+            CurrentClientsOrTrainerFragment firstFragment = new CurrentClientsOrTrainerFragment();
             // Add the fragment to the 'fragment_container' FrameLayout
-            fragmentTransaction.replace(R.id.fragment_container_popup, selectedUserDetailsFragment);
-            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.replace(R.id.fragment_container, firstFragment);
             fragmentTransaction.commit();
         }
+    }
+
+    @Override
+    public void onUserSelected(String userId) {
+        FragmentManager fm = getFragmentManager();
+        SelectedUserDetailsFragment selectedUserDetailsFragment = SelectedUserDetailsFragment.newInstance(userId);
+        selectedUserDetailsFragment.show(fm, "fragment_selected_user");
     }
 
     public void trainer(Bundle savedInstanceState) {
@@ -197,6 +207,5 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
         }
 
     }
-
 }
 

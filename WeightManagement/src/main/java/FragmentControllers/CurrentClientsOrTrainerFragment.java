@@ -7,6 +7,7 @@ import android.content.Context;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 import com.parse.ParseRelation;
@@ -55,6 +57,7 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+
         try {
             activityCallback = (OnAddNewUserButtonClicked) context;
             activityCallBack = (AddNewClientsOrTrainerFragment.OnUserSelected) context;
@@ -66,6 +69,9 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        //Toolbar top
+        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
+        toolbar.setNavigationIcon(null);
         View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
         swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
         currentUser = (User) ParseUser.getCurrentUser();

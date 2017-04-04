@@ -15,13 +15,21 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
+import com.parse.ParseRelation;
 import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.parse.starter.ViewControllers.TrainerViewController;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 import ConfigClasses.MyProfilePictureView;
 import ConfigClasses.ParseAdapterCustomList;
@@ -102,6 +110,7 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
             this.context = context;
             addOnQueryLoadListener(this);
         }
+
         @Override
         public void onLoading() {
             swipeContainer.setRefreshing(true);

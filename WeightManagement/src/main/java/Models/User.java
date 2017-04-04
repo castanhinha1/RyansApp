@@ -8,6 +8,7 @@ import com.parse.ParseClassName;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
+import com.parse.ParseRelation;
 import com.parse.ParseUser;
 import com.parse.ProgressCallback;
 import com.parse.SaveCallback;
@@ -68,11 +69,12 @@ public class User extends ParseUser {
         put("calories", value);
     }
 
-    public List<User> getClients(){
-        return getList("clients");
+    public ParseRelation<User> getClients() {
+        return getRelation("client");
     }
-    public void setClients(List<User> value){
-        put("clients", value);
+
+    public void setClients(ParseRelation<User> clients) {
+        put("client", clients);
     }
 
     public ParseFile getProfilePictureFile(){
