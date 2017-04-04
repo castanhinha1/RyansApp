@@ -15,19 +15,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="">
+    <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="Test push">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/AddNewClientsOrTrainerFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/AddNewClientsOrTrainerFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/CurrentClientsOrTrainerFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/CurrentClientsOrTrainerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/Models/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_selected_user_details.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_selected_user_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <manually-removed-from-ignored>
       <directory path="build/" />
@@ -63,16 +53,22 @@
       <file leaf-file-name="AddNewClientsOrTrainerFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/AddNewClientsOrTrainerFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="61" />
+            <state relative-caret-position="981">
+              <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2223#2441#0" expanded="true" />
                 <element signature="e#2440#2441#0" expanded="true" />
                 <element signature="e#3367#3766#0" expanded="true" />
                 <element signature="e#3765#3766#0" expanded="true" />
+                <element signature="e#3908#3909#0" expanded="true" />
+                <element signature="e#3966#3967#0" expanded="true" />
+                <element signature="e#4042#4043#0" expanded="true" />
+                <element signature="e#4101#4102#0" expanded="true" />
                 <element signature="e#5140#5141#0" expanded="false" />
                 <element signature="e#5231#5232#0" expanded="false" />
+                <element signature="e#5419#5420#0" expanded="true" />
+                <element signature="e#5464#5465#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,23 +77,13 @@
       <file leaf-file-name="CurrentClientsOrTrainerFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/CurrentClientsOrTrainerFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectedUserDetailsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+            <state relative-caret-position="316">
+              <caret line="115" column="39" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3752#4279#0" expanded="true" />
-                <element signature="e#4278#4279#0" expanded="true" />
-                <element signature="e#4475#5004#0" expanded="true" />
+                <element signature="e#3319#3320#0" expanded="true" />
+                <element signature="e#3364#3365#0" expanded="true" />
+                <element signature="e#3803#4264#0" expanded="true" />
+                <element signature="e#4263#4264#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2290,6 +2276,24 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.13.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeightManagement" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConfigClasses" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -2299,7 +2303,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="192.168.247.101:5555" />
+    <property name="device.picker.selection" value="Nexus_5_API_23" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPropertiesWindowManager-NlEditorPanel.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlEditorPanel.WIDTH" value="253" />
@@ -2891,7 +2895,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491262385914</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add and remove clients is 98 percent finished">
+      <created>1491326641512</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1491326641512</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3008,7 +3019,9 @@
     <MESSAGE value="Before total overhaul of layouts, navigation, and fragments" />
     <MESSAGE value="halfway done with total overhaul of layouts, navigation, and fragments" />
     <MESSAGE value="Before changing fragment to dialogfragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Before changing fragment to dialogfragment" />
+    <MESSAGE value="Add and remove clients is 98 percent finished" />
+    <MESSAGE value="Test push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3017,7 +3030,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable-hdpi/ic_stat_name.png" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable-xhdpi-v9/ic_home_black.png" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable/home_icon.xml" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable/trainer_icon.xml" />
@@ -3062,6 +3074,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3074,6 +3087,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3102,6 +3116,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3123,6 +3138,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3135,6 +3151,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3161,6 +3178,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3260,9 +3278,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/ParseAdapterCustomList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/SelectedUserDetailsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="-362">
           <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3275,25 +3301,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/AddNewClientsOrTrainerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="61" />
+        <state relative-caret-position="981">
+          <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2223#2441#0" expanded="true" />
             <element signature="e#2440#2441#0" expanded="true" />
             <element signature="e#3367#3766#0" expanded="true" />
             <element signature="e#3765#3766#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+            <element signature="e#4042#4043#0" expanded="true" />
+            <element signature="e#4101#4102#0" expanded="true" />
             <element signature="e#5140#5141#0" expanded="false" />
             <element signature="e#5231#5232#0" expanded="false" />
+            <element signature="e#5419#5420#0" expanded="true" />
+            <element signature="e#5464#5465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/CurrentClientsOrTrainerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="316">
+          <caret line="115" column="39" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+          <folding>
+            <element signature="e#3319#3320#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3803#4264#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -33,10 +33,6 @@ import ConfigClasses.MyProfilePictureView;
 import ConfigClasses.ParseAdapterCustomList;
 import Models.User;
 
-/**
- * Created by Dylan Castanhinha on 3/31/2017.
- */
-
 public class CurrentClientsOrTrainerFragment extends Fragment {
 
     TextView labelTV;
@@ -49,10 +45,10 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     AddNewClientsOrTrainerFragment.OnUserSelected activityCallBack;
 
     public interface OnAddNewUserButtonClicked {
-        public void onAddUserClicked();
+        void onAddUserClicked();
     }
     public interface OnUserSelected {
-        public void onUserSelected(String userId);
+        void onUserSelected(String userId);
     }
     @Override
     public void onAttach(Context context) {
@@ -105,9 +101,9 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     }
 
 
-    class CurrentClients extends ParseAdapterCustomList implements ParseQueryAdapter.OnQueryLoadListener {
+    private class CurrentClients extends ParseAdapterCustomList implements ParseQueryAdapter.OnQueryLoadListener {
         Context context;
-        public CurrentClients(final Context context){
+        private CurrentClients(final Context context){
             super(context, new ParseQueryAdapter.QueryFactory<User>(){
                public ParseQuery<User> create() {
                    ParseRelation<User> relation = currentUser.getRelation("client");
@@ -117,16 +113,27 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
                    return query;
                }
             });
+            addOnQueryLoadListener(this);
         }
+
+        //This is a test method to see if I can pull from github
+        public void testMethod(){
+
+            Log.i("AppInfo", "Again a test method");
+
+        }
+
 
         @Override
         public void onLoading() {
             swipeContainer.setRefreshing(true);
+            Log.i("AppInfo", "Loading");
         }
 
         @Override
         public void onLoaded(List objects, Exception e) {
             swipeContainer.setRefreshing(false);
+            Log.i("AppInfo", "Loaded");
         }
 
 
