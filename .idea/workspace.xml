@@ -18,14 +18,10 @@
     <list default="true" id="2aa19dd9-a9c4-469c-b009-dbac923c1cf9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="*.iml" />
-    <ignored path=".gradle" />
-    <ignored path="/local.properties/" />
-    <ignored path="/.idea/workspace.xml/" />
-    <ignored path=".DS_Store" />
-    <ignored path="/build/" />
-    <ignored path="/captures" />
     <manually-removed-from-ignored>
+      <directory path="/local.properties/" />
+      <directory path="/build/" />
+      <directory path="/.idea/workspace.xml/" />
       <directory path="build/" />
       <directory path="*.iml/" />
     </manually-removed-from-ignored>
@@ -2835,7 +2831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491344492479</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added .gitignore">
+      <created>1491344506878</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1491344506878</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2954,7 +2957,8 @@
     <MESSAGE value="Before changing fragment to dialogfragment" />
     <MESSAGE value="Add and remove clients is 98 percent finished" />
     <MESSAGE value="Test push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test push" />
+    <MESSAGE value="Added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
