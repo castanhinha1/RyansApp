@@ -55,6 +55,7 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        setHasOptionsMenu(true);
         try {
             activityCallBack = (OnUserSelected) context;
         } catch (ClassCastException e) {
@@ -66,10 +67,12 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_add_new_clients, container, false);
-
+        getActivity().invalidateOptionsMenu();
         //Toolbar top
         final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
         toolbar.setNavigationIcon(R.drawable.ic_back_button);
+        TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
+        titleTextView.setText("Local Clients");
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,9 +86,6 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
         currentUser = (User) ParseUser.getCurrentUser();
         listview = (ListView) rootView.findViewById(R.id.add_new_client_list_view);
         adapter = new NewClientSearch(getActivity());
-        labelTV = new TextView(getActivity());
-        labelTV.setText("Local Clients");
-        listview.addHeaderView(labelTV);
         listview.setAdapter(adapter);
 
         // Configure Swipe to Refresh

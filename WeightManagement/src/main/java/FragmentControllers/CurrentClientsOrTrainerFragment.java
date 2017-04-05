@@ -40,7 +40,6 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     CurrentClients adapter;
     User currentUser;
     SwipeRefreshLayout swipeContainer;
-    ImageButton imageButton;
     OnAddNewUserButtonClicked activityCallback;
     AddNewClientsOrTrainerFragment.OnUserSelected activityCallBack;
 
@@ -65,19 +64,17 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        currentUser = (User) ParseUser.getCurrentUser();
         //Toolbar top
         final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
-        toolbar.setNavigationIcon(null);
+        toolbar.setNavigationIcon(R.drawable.ic_add_user_green);
+        toolbar.setNavigationOnClickListener(new AddNewClientButtonListener());
+        TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
+        titleTextView.setText(currentUser.getFirstName() + "'s "+"Clients");
         View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
         swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
-        currentUser = (User) ParseUser.getCurrentUser();
         listview = (ListView) rootView.findViewById(R.id.current_client_list_view);
-        imageButton = (ImageButton) rootView.findViewById(R.id.addnewuser);
-        imageButton.setOnClickListener(new AddNewClientButtonListener());
         adapter = new CurrentClients(getActivity());
-        labelTV = new TextView(getActivity());
-        labelTV.setText(currentUser.getFirstName() + "'s "+"Clients");
-        listview.addHeaderView(labelTV);
         listview.setAdapter(adapter);
         swipeContainer.setOnRefreshListener(new SwipeToRefresh());
         // Configure the refreshing colors

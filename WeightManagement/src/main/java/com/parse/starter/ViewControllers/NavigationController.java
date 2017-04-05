@@ -50,6 +50,7 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
         //Toolbar (Top)
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         //Navigation Bar (Bottom)
         final BottomBar navigationBar = (BottomBar) findViewById(R.id.bottomBar);
         navigationBar.setOnTabSelectListener(new OnTabSelectListener() {
@@ -148,9 +149,11 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
             // Create a new Fragment to be placed in the activity layout
             AddNewClientsOrTrainerFragment addNewClientsOrTrainerFragment = new AddNewClientsOrTrainerFragment();
             // Add the fragment to the 'fragment_container' FrameLayout
-            fragmentTransaction.replace(R.id.fragment_container, addNewClientsOrTrainerFragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.slide_in_left, R.animator.slide_out_right, R.animator.slide_in_right, R.animator.slide_out_left)
+                    .replace(R.id.fragment_container, addNewClientsOrTrainerFragment)
+                    .addToBackStack(null)
+                    .commit();
         }
     }
 
@@ -187,8 +190,10 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
             // Create a new Fragment to be placed in the activity layout
             CurrentClientsOrTrainerFragment firstFragment = new CurrentClientsOrTrainerFragment();
             // Add the fragment to the 'fragment_container' FrameLayout
-            fragmentTransaction.replace(R.id.fragment_container, firstFragment);
-            fragmentTransaction.commit();
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.fade_in, R.animator.fade_out)
+                    .replace(R.id.fragment_container, firstFragment)
+                    .commit();
         }
     }
 
@@ -202,8 +207,10 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
             // Create a new Fragment to be placed in the activity layout
             YourProfileFragment profileFragment = new YourProfileFragment();
             // Add the fragment to the 'fragment_container' FrameLayout
-            fragmentTransaction.replace(R.id.fragment_container, profileFragment);
-            fragmentTransaction.commit();
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.fade_in, R.animator.fade_out)
+                    .replace(R.id.fragment_container, profileFragment)
+                    .commit();
         }
 
     }

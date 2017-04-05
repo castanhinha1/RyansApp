@@ -79,7 +79,8 @@ public class LoginController extends ActionBarActivity {
                 ParseFacebookUtils.logInWithReadPermissionsInBackground(LoginController.this, mPermissions, new LogInCallback() {
                     @Override
                     public void done(ParseUser user, ParseException e) {
-                        if (user == null) {
+                        if (user == null && e != null) {
+                            Log.i("AppInfo", e.getMessage());
                         } else if (user.isNew()) {
                             currentUser = (User) ParseUser.getCurrentUser();
                             currentUser.setTrainerStatus(false);
