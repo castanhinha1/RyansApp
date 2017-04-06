@@ -66,11 +66,12 @@ public class CurrentClientsOrTrainerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         currentUser = (User) ParseUser.getCurrentUser();
         //Toolbar top
-        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
-        toolbar.setNavigationIcon(R.drawable.ic_add_user_green);
-        toolbar.setNavigationOnClickListener(new AddNewClientButtonListener());
+        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.custom_toolbar);
         TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
         titleTextView.setText(currentUser.getFirstName() + "'s "+"Clients");
+        ImageButton backButton = (ImageButton) getActivity().findViewById(R.id.toolbar_left_button);
+        backButton.setImageResource(R.drawable.ic_add_user_green);
+        backButton.setOnClickListener(new AddNewClientButtonListener());
         View rootView = inflater.inflate(R.layout.fragment_current_clients, container, false);
         swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeContainer);
         listview = (ListView) rootView.findViewById(R.id.current_client_list_view);

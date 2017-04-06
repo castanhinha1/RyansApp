@@ -1,41 +1,28 @@
 package com.parse.starter.ViewControllers;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.annotation.IdRes;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.TabHost;
-
-import com.parse.FindCallback;
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
-import java.util.List;
-
 import FragmentControllers.AddNewClientsOrTrainerFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
 import FragmentControllers.SelectedUserDetailsFragment;
 import FragmentControllers.YourProfileFragment;
-import Models.User;
 
 public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected, SelectedUserDetailsFragment.DismissDialogListener {
 
@@ -48,9 +35,9 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
         setContentView(R.layout.activity_navigation);
         this.savedInstanceState1 = savedInstanceState;
         //Toolbar (Top)
-        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        toolbar = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         //Navigation Bar (Bottom)
         final BottomBar navigationBar = (BottomBar) findViewById(R.id.bottomBar);
         navigationBar.setOnTabSelectListener(new OnTabSelectListener() {

@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:layout_collapseMode="pin">
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/palette_texticonscolor"
-        android:theme="@style/toolbar"
-        android:elevation="4dp">
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/toolbar_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-condensed"
-        android:text="WorkoutPal"
-        android:textColor="@color/palette_primarycolor"
-        android:textSize="24sp" />
+        <ImageButton
+            android:id="@+id/toolbar_left_button"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right" />
 
-    </android.support.v7.widget.Toolbar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/toolbar_title"/>
+
+            <ImageButton
+                android:id="@+id/toolbar_right_button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="left"
+                style="@style/Widget.AppCompat.ActionButton" />
+    </FrameLayout>
+
+</android.support.v7.widget.Toolbar>
+
+<!--
+<TextView
+android:id="@+id/toolbar_title"
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+android:layout_gravity="center_horizontal"
+android:visibility="gone"
+android:text="@string/app_name"
+android:textColor="@color/palette_primarycolor"
+style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" />-->

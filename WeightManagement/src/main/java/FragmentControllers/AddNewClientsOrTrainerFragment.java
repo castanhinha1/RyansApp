@@ -69,7 +69,7 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_add_new_clients, container, false);
         getActivity().invalidateOptionsMenu();
         //Toolbar top
-        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.tool_bar);
+        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.custom_toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_back_button);
         TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
         titleTextView.setText("Local Clients");

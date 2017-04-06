@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="parseui-widget-android-0.0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/8544be5b29b245ef36f894808058b7bd5f1c7df6/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/8544be5b29b245ef36f894808058b7bd5f1c7df6/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f2f4ecbc040c44f78c8a7c70a953402440361265/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/f2f4ecbc040c44f78c8a7c70a953402440361265/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

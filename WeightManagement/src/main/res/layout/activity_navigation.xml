@@ -8,16 +8,14 @@
     tools:context="com.parse.starter.ViewControllers.NavigationController"
     android:background="#3a8f3e">
 
-    <include
-        android:id="@+id/tool_bar"
-        layout="@layout/tool_bar">
-    </include>
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar_layout"/>
 
     <FrameLayout
-        android:layout_below="@+id/tool_bar"
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout"
         android:layout_above="@+id/bottomBar">
     </FrameLayout>
 

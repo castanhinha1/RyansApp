@@ -3038,7 +3038,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0e0070;
         public static final int action_mode_bar_stub=0x7f0e006f;
         public static final int action_mode_close_button=0x7f0e0052;
-        public static final int action_settings=0x7f0e00f1;
+        public static final int action_settings=0x7f0e00f4;
         public static final int action_text=0x7f0e00d5;
         public static final int actions=0x7f0e00e2;
         public static final int activity_chooser_view_content=0x7f0e0053;
@@ -3073,7 +3073,7 @@ containing a value of this type.
         public static final int buttonVeryHeavy=0x7f0e008e;
         public static final int buttonVeryLight=0x7f0e008a;
         public static final int calculateButton=0x7f0e008f;
-        public static final int calendar=0x7f0e00ec;
+        public static final int calendar=0x7f0e00ef;
         public static final int cancel_action=0x7f0e00d7;
         public static final int center=0x7f0e002a;
         public static final int center_horizontal=0x7f0e002b;
@@ -3101,6 +3101,7 @@ containing a value of this type.
         public static final int current_client_text_view_name=0x7f0e00ce;
         public static final int custom=0x7f0e0064;
         public static final int customPanel=0x7f0e0063;
+        public static final int custom_toolbar=0x7f0e00ea;
         public static final int dailycalories=0x7f0e0091;
         public static final int decor_content_parent=0x7f0e0071;
         public static final int default_activity_button=0x7f0e0056;
@@ -3131,7 +3132,7 @@ containing a value of this type.
         public static final int fragment_container=0x7f0e009b;
         public static final int fragment_container2=0x7f0e00a4;
         public static final int fragment_container_popup=0x7f0e009d;
-        public static final int goal=0x7f0e00eb;
+        public static final int goal=0x7f0e00ee;
         public static final int headingLabel=0x7f0e0083;
         public static final int home=0x7f0e0004;
         public static final int homeAsUp=0x7f0e0013;
@@ -3155,7 +3156,7 @@ containing a value of this type.
         public static final int loginbutton=0x7f0e0096;
         public static final int logoutButton=0x7f0e00cc;
         public static final int male=0x7f0e0087;
-        public static final int masked=0x7f0e00f0;
+        public static final int masked=0x7f0e00f3;
         public static final int media_actions=0x7f0e00d9;
         public static final int messenger_send_button=0x7f0e00d2;
         public static final int middle=0x7f0e003c;
@@ -3176,7 +3177,7 @@ containing a value of this type.
         public static final int parentPanel=0x7f0e005c;
         public static final int password=0x7f0e0094;
         public static final int pin=0x7f0e0034;
-        public static final int profile=0x7f0e00ee;
+        public static final int profile=0x7f0e00f1;
         public static final int profile_picture=0x7f0e00c8;
         public static final int progress_circular=0x7f0e0006;
         public static final int progress_horizontal=0x7f0e0007;
@@ -3243,12 +3244,14 @@ containing a value of this type.
         public static final int title=0x7f0e0059;
         public static final int titleDividerNoCustom=0x7f0e0068;
         public static final int title_template=0x7f0e0066;
-        public static final int tool_bar=0x7f0e009a;
-        public static final int toolbar_title=0x7f0e00ea;
+        public static final int toolbar_layout=0x7f0e009a;
+        public static final int toolbar_left_button=0x7f0e00eb;
+        public static final int toolbar_right_button=0x7f0e00ed;
+        public static final int toolbar_title=0x7f0e00ec;
         public static final int top=0x7f0e0032;
         public static final int topPanel=0x7f0e0065;
         public static final int touch_outside=0x7f0e00b4;
-        public static final int trainer=0x7f0e00ed;
+        public static final int trainer=0x7f0e00f0;
         public static final int trainerCheckBox=0x7f0e00cb;
         public static final int trainer_view=0x7f0e00a3;
         public static final int transition_current_scene=0x7f0e000b;
@@ -3259,7 +3262,7 @@ containing a value of this type.
         public static final int useLogo=0x7f0e0018;
         public static final int username=0x7f0e0093;
         public static final int view_offset_helper=0x7f0e000e;
-        public static final int visible=0x7f0e00ef;
+        public static final int visible=0x7f0e00f2;
         public static final int weightTextField=0x7f0e0084;
         public static final int withText=0x7f0e0041;
         public static final int wrap_content=0x7f0e0024;
@@ -3334,36 +3337,37 @@ containing a value of this type.
         public static final int design_text_input_password_icon=0x7f040037;
         public static final int fragment_add_new_clients=0x7f040038;
         public static final int fragment_current_clients=0x7f040039;
-        public static final int fragment_selected_user_details=0x7f04003a;
-        public static final int fragment_your_profile=0x7f04003b;
-        public static final int list_layout_current_clients=0x7f04003c;
-        public static final int list_layout_new_client=0x7f04003d;
-        public static final int messenger_button_send_blue_large=0x7f04003e;
-        public static final int messenger_button_send_blue_round=0x7f04003f;
-        public static final int messenger_button_send_blue_small=0x7f040040;
-        public static final int messenger_button_send_white_large=0x7f040041;
-        public static final int messenger_button_send_white_round=0x7f040042;
-        public static final int messenger_button_send_white_small=0x7f040043;
-        public static final int notification_action=0x7f040044;
-        public static final int notification_action_tombstone=0x7f040045;
-        public static final int notification_media_action=0x7f040046;
-        public static final int notification_media_cancel_action=0x7f040047;
-        public static final int notification_template_big_media=0x7f040048;
-        public static final int notification_template_big_media_custom=0x7f040049;
-        public static final int notification_template_big_media_narrow=0x7f04004a;
-        public static final int notification_template_big_media_narrow_custom=0x7f04004b;
-        public static final int notification_template_custom_big=0x7f04004c;
-        public static final int notification_template_icon_group=0x7f04004d;
-        public static final int notification_template_lines_media=0x7f04004e;
-        public static final int notification_template_media=0x7f04004f;
-        public static final int notification_template_media_custom=0x7f040050;
-        public static final int notification_template_part_chronometer=0x7f040051;
-        public static final int notification_template_part_time=0x7f040052;
-        public static final int select_dialog_item_material=0x7f040053;
-        public static final int select_dialog_multichoice_material=0x7f040054;
-        public static final int select_dialog_singlechoice_material=0x7f040055;
-        public static final int support_simple_spinner_dropdown_item=0x7f040056;
-        public static final int tool_bar=0x7f040057;
+        public static final int fragment_home=0x7f04003a;
+        public static final int fragment_selected_user_details=0x7f04003b;
+        public static final int fragment_your_profile=0x7f04003c;
+        public static final int list_layout_current_clients=0x7f04003d;
+        public static final int list_layout_new_client=0x7f04003e;
+        public static final int messenger_button_send_blue_large=0x7f04003f;
+        public static final int messenger_button_send_blue_round=0x7f040040;
+        public static final int messenger_button_send_blue_small=0x7f040041;
+        public static final int messenger_button_send_white_large=0x7f040042;
+        public static final int messenger_button_send_white_round=0x7f040043;
+        public static final int messenger_button_send_white_small=0x7f040044;
+        public static final int notification_action=0x7f040045;
+        public static final int notification_action_tombstone=0x7f040046;
+        public static final int notification_media_action=0x7f040047;
+        public static final int notification_media_cancel_action=0x7f040048;
+        public static final int notification_template_big_media=0x7f040049;
+        public static final int notification_template_big_media_custom=0x7f04004a;
+        public static final int notification_template_big_media_narrow=0x7f04004b;
+        public static final int notification_template_big_media_narrow_custom=0x7f04004c;
+        public static final int notification_template_custom_big=0x7f04004d;
+        public static final int notification_template_icon_group=0x7f04004e;
+        public static final int notification_template_lines_media=0x7f04004f;
+        public static final int notification_template_media=0x7f040050;
+        public static final int notification_template_media_custom=0x7f040051;
+        public static final int notification_template_part_chronometer=0x7f040052;
+        public static final int notification_template_part_time=0x7f040053;
+        public static final int select_dialog_item_material=0x7f040054;
+        public static final int select_dialog_multichoice_material=0x7f040055;
+        public static final int select_dialog_singlechoice_material=0x7f040056;
+        public static final int support_simple_spinner_dropdown_item=0x7f040057;
+        public static final int tool_bar=0x7f040058;
     }
     public static final class menu {
         public static final int menu_main=0x7f0f0000;
@@ -3450,8 +3454,6 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f0a00a3;
         public static final int Animation_AppCompat_DropDownUp=0x7f0a00a4;
         public static final int Animation_Design_BottomSheetDialog=0x7f0a00a5;
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f0a00a6;
         public static final int BB_BottomBarBadge_Text=0x7f0a00a7;
         public static final int BB_BottomBarItem=0x7f0a00a8;
@@ -3853,8 +3855,7 @@ containing a value of this type.
         public static final int com_facebook_button_share=0x7f0a0193;
         public static final int com_facebook_loginview_default_style=0x7f0a0194;
         public static final int com_facebook_loginview_silver_style=0x7f0a0195;
-        public static final int toolbar=0x7f0a0196;
-        public static final int tooltip_bubble_text=0x7f0a0197;
+        public static final int tooltip_bubble_text=0x7f0a0196;
     }
     public static final class xml {
         public static final int bottombar_tabs=0x7f070000;
