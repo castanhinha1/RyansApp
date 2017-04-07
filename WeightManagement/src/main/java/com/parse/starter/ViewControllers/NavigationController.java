@@ -4,15 +4,23 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.support.annotation.IdRes;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageButton;
+
 import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.roughike.bottombar.BottomBar;
@@ -27,6 +35,7 @@ import FragmentControllers.YourProfileFragment;
 public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected, SelectedUserDetailsFragment.DismissDialogListener {
 
     private Toolbar toolbar;
+    private PopupMenu mPopupMenu;
     Bundle savedInstanceState1;
 
     @Override
@@ -36,7 +45,22 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
         this.savedInstanceState1 = savedInstanceState;
         //Toolbar (Top)
         toolbar = (Toolbar) findViewById(R.id.custom_toolbar);
+        ImageButton menuButton = (ImageButton) findViewById(R.id.toolbar_right_button);
+        menuButton.setImageResource(R.drawable.ic_menu_button);
+        mPopupMenu = new PopupMenu(this, menuButton);
+        MenuInflater menuInflater = mPopupMenu.getMenuInflater();
+        menuInflater.inflate(R.menu.menu_main, mPopupMenu.getMenu());
+        menuButton.setOnClickListener(new MenuButtonClickListener());
         setSupportActionBar(toolbar);
+
+        //Status bar very top
+        Window window = this.getWindow();
+        // clear FLAG_TRANSLUCENT_STATUS flag:
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        // finally change the color
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.palette_lightprimarycolor));
 
         //Navigation Bar (Bottom)
         final BottomBar navigationBar = (BottomBar) findViewById(R.id.bottomBar);
@@ -76,6 +100,14 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
                 }
             }
         });
+    }
+
+    private class MenuButtonClickListener implements ImageButton.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            mPopupMenu.show();
+        }
     }
 
     @Override

@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -69,17 +70,11 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_add_new_clients, container, false);
         getActivity().invalidateOptionsMenu();
         //Toolbar top
-        final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.custom_toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_back_button);
         TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
         titleTextView.setText("Local Clients");
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragmentManager().popBackStack();
-                toolbar.setNavigationIcon(null);
-            }
-        });
+        ImageButton backButton = (ImageButton) getActivity().findViewById(R.id.toolbar_left_button);
+        backButton.setImageResource(R.drawable.ic_back_button);
+        backButton.setOnClickListener(new BackButtonListener());
 
         //View items
         swipeContainer = (SwipeRefreshLayout) rootView.findViewById(R.id.swipe_container_for_new_client);
@@ -93,6 +88,13 @@ public class AddNewClientsOrTrainerFragment extends Fragment {
         swipeContainer.setColorSchemeResources(R.color.palette_lightprimarycolor);
         return rootView;
 
+    }
+
+    private class BackButtonListener implements ImageButton.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            getFragmentManager().popBackStack();
+        }
     }
 
     class NewClientSearch extends ParseAdapterCustomList implements ParseQueryAdapter.OnQueryLoadListener {
