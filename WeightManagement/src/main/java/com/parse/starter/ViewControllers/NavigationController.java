@@ -29,6 +29,7 @@ import com.roughike.bottombar.OnTabSelectListener;
 
 import FragmentControllers.AddNewClientsOrTrainerFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
+import FragmentControllers.HomeViewFragment;
 import FragmentControllers.SelectedUserDetailsFragment;
 import FragmentControllers.YourProfileFragment;
 
@@ -68,9 +69,9 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
             @Override
             public void onTabSelected(@IdRes int tabId) {
                 if (tabId == R.id.home) {
-                    Log.i("AppInfo", "Home button pressed");
+                    home(savedInstanceState);
                 } else if (tabId == R.id.goal) {
-                    Log.i("AppInfo", "Goal button pressed");
+                    goal(savedInstanceState);
                 } else if (tabId == R.id.calendar) {
                     calendar(savedInstanceState);
                 } else if (tabId == R.id.trainer) {
@@ -86,9 +87,9 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
             @Override
             public void onTabReSelected(@IdRes int tabId) {
                 if (tabId == R.id.home) {
-                    Log.i("AppInfo", "Home button pressed");
+                    home(savedInstanceState);
                 } else if (tabId == R.id.goal) {
-                    Log.i("AppInfo", "Goal button pressed");
+                    goal(savedInstanceState);
                 } else if (tabId == R.id.calendar) {
                     calendar(savedInstanceState);
                 } else if (tabId == R.id.trainer) {
@@ -153,10 +154,6 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
 
     }
 
-    public void calendar(Bundle savedInstanceState){
-        Log.i("AppInfo", "Calendar Button Clicked");
-    }
-
     @Override
     public void onAddUserClicked() {
         FragmentManager fm = getFragmentManager();
@@ -197,6 +194,31 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
         FragmentManager fm = getFragmentManager();
         SelectedUserDetailsFragment selectedUserDetailsFragment = SelectedUserDetailsFragment.newInstance(userId);
         selectedUserDetailsFragment.show(fm, "fragment_selected_user");
+    }
+
+    public void home(Bundle savedInstanceState){
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if (findViewById(R.id.fragment_container) != null) {
+            if (savedInstanceState != null) {
+                return;
+            }
+            // Create a new Fragment to be placed in the activity layout
+            HomeViewFragment homeViewFragment = new HomeViewFragment();
+            // Add the fragment to the 'fragment_container' FrameLayout
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.fade_in, R.animator.fade_out)
+                    .replace(R.id.fragment_container, homeViewFragment)
+                    .commit();
+        }
+    }
+
+    public void goal(Bundle savedInstanceState){
+        Log.i("AppInfo", "Goal Button Clicked");
+    }
+
+    public void calendar(Bundle savedInstanceState){
+        Log.i("AppInfo", "Calendar Button Clicked");
     }
 
     public void trainer(Bundle savedInstanceState) {

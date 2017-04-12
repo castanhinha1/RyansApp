@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/dylancastanhinha/Documents/Parse-Starter-Project-1.13.0/WeightManagement/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ea48bd344a41099b012b2d1faa134fa769355a86">
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8dda3efdb0ad2bcb4ed4846a705fcaf7289b44ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/Users/dylancastanhinha/Documents/Parse-Starter-Project-1.13.0/WeightManagement/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_91dd9a246d5a45d7f6b9e83a32ad3b3cf8a34e35/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylancastanhinha/Documents/Parse-Starter-Project-1.13.0/WeightManagement/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e28c408046b18dd3ca1b9d135d7be647f58153e7">
-        <dex dex="/Users/dylancastanhinha/Documents/Parse-Starter-Project-1.13.0/WeightManagement/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d0ccde403040425e29bc95fa4ff72cfc32273a4a/classes.dex" />
+        <dex dex="C:\Users\Dylan Castanhinha\Documents\Parse-Starter-Project-1.13.0\WeightManagement\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_645e7be8de4ebf06e8308bf24f99fffbdf5ee3c1\classes.dex" />
     </item>
 
 </items>
