@@ -16,6 +16,7 @@ import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
+import Models.Relation;
 import Models.User;
 
 
@@ -30,6 +31,7 @@ public class WeightManagementMain extends Application {
 
     //Register Parse subclasses
     ParseUser.registerSubclass(User.class);
+    ParseObject.registerSubclass(Relation.class);
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())

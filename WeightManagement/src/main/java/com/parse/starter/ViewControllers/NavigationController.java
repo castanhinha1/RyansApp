@@ -28,12 +28,14 @@ import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
 import FragmentControllers.AddNewClientsOrTrainerFragment;
+import FragmentControllers.ChangeDetailsFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
+import FragmentControllers.EditDetailsFragment;
 import FragmentControllers.HomeViewFragment;
 import FragmentControllers.SelectedUserDetailsFragment;
 import FragmentControllers.YourProfileFragment;
 
-public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected, SelectedUserDetailsFragment.DismissDialogListener {
+public class NavigationController extends AppCompatActivity implements CurrentClientsOrTrainerFragment.OnAddNewUserButtonClicked, AddNewClientsOrTrainerFragment.OnUserSelected, SelectedUserDetailsFragment.DismissDialogListener, HomeViewFragment.OnEditDetailsButton, ChangeDetailsFragment.DismissEditDialogListener, EditDetailsFragment.OnRowSelected {
 
     private Toolbar toolbar;
     private PopupMenu mPopupMenu;
@@ -104,7 +106,6 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
     }
 
     private class MenuButtonClickListener implements ImageButton.OnClickListener{
-
         @Override
         public void onClick(View view) {
             mPopupMenu.show();
@@ -155,6 +156,33 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
     }
 
     @Override
+    public void onRowSelected(int position) {
+        FragmentManager fm = getFragmentManager();
+        ChangeDetailsFragment changeDetailsFragment = ChangeDetailsFragment.newInstance(position);
+        changeDetailsFragment.show(fm, "fragment_selected_user");
+
+    }
+
+    @Override
+    public void onEditDetailsClicked() {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if (findViewById(R.id.fragment_container) != null) {
+            if (savedInstanceState1 != null) {
+                return;
+            }
+            // Create a new Fragment to be placed in the activity layout
+            EditDetailsFragment editDetailsFragment = new EditDetailsFragment();
+            // Add the fragment to the 'fragment_container' FrameLayout
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.slide_in_left, R.animator.slide_out_right, R.animator.slide_in_right, R.animator.slide_out_left)
+                    .replace(R.id.fragment_container, editDetailsFragment)
+                    .addToBackStack(null)
+                    .commit();
+        }
+    }
+
+    @Override
     public void onAddUserClicked() {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -171,6 +199,11 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
                     .addToBackStack(null)
                     .commit();
         }
+    }
+
+    @Override
+    public void onEditDialogDismissal() {
+        getFragmentManager().popBackStack();
     }
 
     @Override

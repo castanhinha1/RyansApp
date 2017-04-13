@@ -62,17 +62,52 @@ public class User extends ParseUser {
         put("lastname", value);
     }
 
-    public int getCalories(){
-        return getInt("calories");
+    public String getCalories(){
+        return getString("calories");
     }
-    public void setCalories(int value){
+    public void setCalories(String value){
         put("calories", value);
     }
 
+    public String getSex(){
+        return getString("sex");
+    }
+    public void setSex(String value){
+        put("sex", value);
+    }
+    public String getAge(){
+        return getString("age");
+    }
+    public void setAge(String value){
+        put("age", value);
+    }
+    public String getWeight(){
+        return getString("weight");
+    }
+    public void setWeight(String value){
+        put("weight", value);
+    }
+    public String getBodyFat(){
+        return getString("bodyfat");
+    }
+    public void setBodyFat(String value){
+        put("bodyfat", value);
+    }
+    public String getHeight(){
+        return getString("height");
+    }
+    public void setHeight(String value){
+        put("height", value);
+    }
+    public User getTrainer(){
+        return (User) getParseUser("trainer");
+    }
+    public void setTrainer(User value) {
+        put("trainer", value);
+    }
     public ParseRelation<User> getClients() {
         return getRelation("client");
     }
-
     public void setClients(ParseRelation<User> clients) {
         put("client", clients);
     }

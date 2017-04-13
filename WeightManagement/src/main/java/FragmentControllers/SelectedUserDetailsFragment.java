@@ -20,6 +20,7 @@ import com.parse.DeleteCallback;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.LogInCallback;
+import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -33,6 +34,7 @@ import java.util.Date;
 import java.util.List;
 
 import ConfigClasses.MyProfilePictureView;
+import Models.Relation;
 import Models.User;
 
 
@@ -132,6 +134,25 @@ public class SelectedUserDetailsFragment extends DialogFragment {
                     @Override
                     public void done(ParseException e) {
                         if (e == null) {
+                            ParseACL groupACL = new ParseACL();
+                            groupACL.setReadAccess(currentUser, true);
+                            groupACL.setWriteAccess(currentUser, true);
+                            groupACL.setReadAccess(displayedUser, true);
+                            groupACL.setWriteAccess(displayedUser, true);
+                            Relation relation = new Relation();
+                            relation.setACL(groupACL);
+                            relation.setTrainer(currentUser);
+                            relation.setClient(displayedUser);
+                            relation.saveInBackground(new SaveCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null) {
+                                        Log.i("AppInfo", "Saved");
+                                    } else {
+                                        Log.i("AppInfo", e.getMessage());
+                                    }
+                                }
+                            });
                             addRemovebutton.setText("Delete Client");
                             isClient = true;
                             activityCallBack.onDialogDismissal();

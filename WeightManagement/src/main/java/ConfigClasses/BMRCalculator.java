@@ -29,7 +29,7 @@ public class BMRCalculator {
         step1();
         dailyCalories = (int) dailyCaloricExpenditure();
         currentUser = (User) ParseUser.getCurrentUser();
-        currentUser.setCalories(dailyCalories);
+        currentUser.setCalories(Integer.toString(dailyCalories));
         currentUser.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
