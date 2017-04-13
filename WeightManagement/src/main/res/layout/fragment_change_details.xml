@@ -85,8 +85,7 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Photo"/>
+                        android:layout_height="match_parent" />
 
                 </RelativeLayout>
 
@@ -98,8 +97,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/change_details_edit_text"
-                        android:text="TextView"/>
+                        android:id="@+id/change_details_edit_text" />
 
                 </RelativeLayout>
 
@@ -108,10 +106,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
+                    <Spinner
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Spinner"/>
+                        android:layout_height="match_parent">
+
+                    </Spinner>
 
                 </RelativeLayout>
 
