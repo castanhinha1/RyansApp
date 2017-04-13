@@ -178,4 +178,7 @@ public class EditDetailsFragment extends Fragment {
             return convertView;
         }
     }
+    public void reloadData(){
+        adapter.notifyDataSetChanged();
+    }
 }

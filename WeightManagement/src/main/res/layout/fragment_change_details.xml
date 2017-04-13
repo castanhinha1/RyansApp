@@ -102,15 +102,34 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/change_details_spinner_relative_layout"
+                    android:id="@+id/change_details_number_picker_relative_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <NumberPicker
+                        android:id="@+id/singleNumberPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true">
+                    </NumberPicker>
 
-                    </Spinner>
+                    <TextView
+                        android:text="Years"
+                        android:id="@+id/change_details_single_number_picker_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/change_details_dual_number_picker_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
 
                 </RelativeLayout>
 

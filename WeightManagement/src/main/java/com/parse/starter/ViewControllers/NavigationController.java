@@ -1,5 +1,6 @@
 package com.parse.starter.ViewControllers;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
@@ -203,7 +204,9 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
 
     @Override
     public void onEditDialogDismissal() {
-        getFragmentManager().popBackStack();
+        Log.i("AppInfo", String.valueOf(getFragmentManager().findFragmentById(R.id.fragment_container)));
+        //Reload data here
+        //getFragmentManager().popBackStack();
     }
 
     @Override

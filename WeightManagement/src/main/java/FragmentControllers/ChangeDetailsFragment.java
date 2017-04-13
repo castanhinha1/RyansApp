@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -30,12 +31,19 @@ public class ChangeDetailsFragment extends DialogFragment {
     TextView cancelButton;
     TextView label;
     TextView saveButton;
+    TextView numberPickerLabel;
     User currentUser;
     RelativeLayout photoRR;
     RelativeLayout textViewRR;
-    RelativeLayout spinnerRR;
+    RelativeLayout numberPickerRR;
+    RelativeLayout dualNumberPickerRR;
+    NumberPicker singleNumberPicker;
+    NumberPicker firstNumberPicker;
+    NumberPicker secondNumberPicker;
     EditText changeText;
     DismissEditDialogListener activityCallback;
+    int updatedValue;
+    String[] values = {"Male", "Female", "Other"};
 
     public ChangeDetailsFragment(){
     }
@@ -49,12 +57,13 @@ public class ChangeDetailsFragment extends DialogFragment {
     }
 
     public interface DismissEditDialogListener{
-        public void onEditDialogDismissal();
+        void onEditDialogDismissal();
     }
 
     @Override
     public void dismiss() {
         super.dismiss();
+        activityCallback.onEditDialogDismissal();
     }
 
     @Override
@@ -67,10 +76,15 @@ public class ChangeDetailsFragment extends DialogFragment {
         saveButton = (TextView) rootView.findViewById(R.id.change_details_save_button);
         photoRR = (RelativeLayout) rootView.findViewById(R.id.change_details_photo_relative_layout);
         textViewRR = (RelativeLayout) rootView.findViewById(R.id.change_details_text_view_relative_layout);
-        spinnerRR = (RelativeLayout) rootView.findViewById(R.id.change_details_spinner_relative_layout);
+        numberPickerRR = (RelativeLayout) rootView.findViewById(R.id.change_details_number_picker_relative_layout);
+        dualNumberPickerRR = (RelativeLayout) rootView.findViewById(R.id.change_details_dual_number_picker_relative_layout);
+        singleNumberPicker = (NumberPicker) rootView.findViewById(R.id.singleNumberPicker);
+        numberPickerLabel = (TextView) rootView.findViewById(R.id.change_details_single_number_picker_label);
+        numberPickerLabel.setText("");
         photoRR.setVisibility(View.INVISIBLE);
         textViewRR.setVisibility(View.INVISIBLE);
-        spinnerRR.setVisibility(View.INVISIBLE);
+        numberPickerRR.setVisibility(View.INVISIBLE);
+        dualNumberPickerRR.setVisibility(View.INVISIBLE);
         changeText = (EditText) rootView.findViewById(R.id.change_details_edit_text);
         chooseCorrectRelativeLayout();
         cancelButton.setOnClickListener(new CancelClickListener());
@@ -92,26 +106,42 @@ public class ChangeDetailsFragment extends DialogFragment {
             }
             case 1: {
                 textViewRR.setVisibility(View.VISIBLE);
+                label.setText("Edit Name");
                 break;
             }
             case 2: {
-                spinnerRR.setVisibility(View.VISIBLE);
+                numberPickerRR.setVisibility(View.VISIBLE);
+                singleNumberPicker.setMinValue(0);
+                singleNumberPicker.setMaxValue(values.length-1);
+                singleNumberPicker.setDisplayedValues(values);
+                singleNumberPicker.setWrapSelectorWheel(true);
+                singleNumberPicker.setOnValueChangedListener(new NumberPickerListener());
+                label.setText("Edit Sex");
                 break;
             }
             case 3: {
-                spinnerRR.setVisibility(View.VISIBLE);
+                numberPickerRR.setVisibility(View.VISIBLE);
+                singleNumberPicker.setMinValue(0);
+                singleNumberPicker.setMaxValue(120);
+                singleNumberPicker.setWrapSelectorWheel(true);
+                singleNumberPicker.setOnValueChangedListener(new NumberPickerListener());
+                label.setText("Edit Age");
+                numberPickerLabel.setText("Years");
                 break;
             }
             case 4: {
-                spinnerRR.setVisibility(View.VISIBLE);
+                dualNumberPickerRR.setVisibility(View.VISIBLE);
+                label.setText("Edit Weight");
                 break;
             }
             case 5: {
-                spinnerRR.setVisibility(View.VISIBLE);
+                dualNumberPickerRR.setVisibility(View.VISIBLE);
+                label.setText("Edit Height");
                 break;
             }
             case 6: {
-                spinnerRR.setVisibility(View.VISIBLE);
+                dualNumberPickerRR.setVisibility(View.VISIBLE);
+                label.setText("Edit Body Fat%");
                 break;
             }
             case 7: {
@@ -125,26 +155,80 @@ public class ChangeDetailsFragment extends DialogFragment {
         }
     }
 
-    private class CancelClickListener implements TextView.OnClickListener{
+    private class NumberPickerListener implements NumberPicker.OnValueChangeListener{
+
         @Override
-        public void onClick(View v) {
-            dismiss();
+        public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+            updatedValue = newVal;
         }
     }
     private class SaveButtonClickListener implements TextView.OnClickListener{
         @Override
         public void onClick(View v) {
-            currentUser.setFullName(String.valueOf(changeText.getText()));
+            switch (position) {
+                case 0: {
+
+                    break;
+                }
+                case 1: {
+                    currentUser.setFullName(String.valueOf(changeText.getText()));
+                    break;
+                }
+                case 2: {
+                    if (updatedValue != -1) {
+                        currentUser.setSex(values[updatedValue]);
+                    } else {
+                        currentUser.setSex(values[singleNumberPicker.getValue()]);
+                    }
+                    break;
+                }
+                case 3: {
+                    if (updatedValue != -1) {
+                        currentUser.setAge(String.valueOf(updatedValue));
+                    } else {
+                        currentUser.setAge(String.valueOf(singleNumberPicker.getValue()));
+                    }
+                    break;
+                }
+                case 4: {
+                    currentUser.setWeight(String.valueOf(updatedValue));
+                    break;
+                }
+                case 5: {
+                    currentUser.setHeight(String.valueOf(updatedValue));
+                    break;
+                }
+                case 6: {
+                    currentUser.setBodyFat(String.valueOf(updatedValue));
+                    break;
+                }
+                case 7: {
+
+                    break;
+                }
+                case 8: {
+
+                    break;
+                }
+            }
             currentUser.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {
                     if (e == null){
                         Log.i("AppInfo", "Saved");
+                        dismiss();
                     } else {
                         Log.i("AppInfo", e.getMessage());
                     }
                 }
             });
+        }
+    }
+
+    private class CancelClickListener implements TextView.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            dismiss();
         }
     }
 
