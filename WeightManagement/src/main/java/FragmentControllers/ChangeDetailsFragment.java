@@ -43,7 +43,9 @@ public class ChangeDetailsFragment extends DialogFragment {
     EditText changeText;
     DismissEditDialogListener activityCallback;
     int updatedValue;
-    String[] values = {"Male", "Female", "Other"};
+    String[] valuesSex = {"Male", "Female", "Other"};
+    String[] valuesHeightFt = {"3 ft", "4 ft", "5 ft", "6 ft", "7ft"};
+    String[] valuesHeightInches = {"0 in", "1 in", "2 in", "3 in", "4in", "5 in", "6 in", "7 in", "8 in", "9in", "10 in", "11 in"};
 
     public ChangeDetailsFragment(){
     }
@@ -79,6 +81,8 @@ public class ChangeDetailsFragment extends DialogFragment {
         numberPickerRR = (RelativeLayout) rootView.findViewById(R.id.change_details_number_picker_relative_layout);
         dualNumberPickerRR = (RelativeLayout) rootView.findViewById(R.id.change_details_dual_number_picker_relative_layout);
         singleNumberPicker = (NumberPicker) rootView.findViewById(R.id.singleNumberPicker);
+        firstNumberPicker = (NumberPicker) rootView.findViewById(R.id.firstNumberPicker);
+        secondNumberPicker = (NumberPicker) rootView.findViewById(R.id.secondNumberPicker);
         numberPickerLabel = (TextView) rootView.findViewById(R.id.change_details_single_number_picker_label);
         numberPickerLabel.setText("");
         photoRR.setVisibility(View.INVISIBLE);
@@ -102,6 +106,8 @@ public class ChangeDetailsFragment extends DialogFragment {
         switch (position) {
             case 0: {
                 photoRR.setVisibility(View.VISIBLE);
+                label.setText("Change Photo");
+                
                 break;
             }
             case 1: {
@@ -112,31 +118,48 @@ public class ChangeDetailsFragment extends DialogFragment {
             case 2: {
                 numberPickerRR.setVisibility(View.VISIBLE);
                 singleNumberPicker.setMinValue(0);
-                singleNumberPicker.setMaxValue(values.length-1);
-                singleNumberPicker.setDisplayedValues(values);
+                singleNumberPicker.setMaxValue(valuesSex.length-1);
+                singleNumberPicker.setDisplayedValues(valuesSex);
                 singleNumberPicker.setWrapSelectorWheel(true);
                 singleNumberPicker.setOnValueChangedListener(new NumberPickerListener());
                 label.setText("Edit Sex");
                 break;
             }
             case 3: {
+                label.setText("Edit Age");
+                numberPickerLabel.setText("Years");
                 numberPickerRR.setVisibility(View.VISIBLE);
                 singleNumberPicker.setMinValue(0);
                 singleNumberPicker.setMaxValue(120);
                 singleNumberPicker.setWrapSelectorWheel(true);
                 singleNumberPicker.setOnValueChangedListener(new NumberPickerListener());
-                label.setText("Edit Age");
-                numberPickerLabel.setText("Years");
+                int defaultValue;
+                try {
+                    defaultValue = Integer.parseInt(currentUser.getAge());
+                    singleNumberPicker.setValue(defaultValue);
+                } catch(NumberFormatException nfe) {
+                    Log.i("AppInfo", nfe.getMessage());
+                }
                 break;
             }
             case 4: {
-                dualNumberPickerRR.setVisibility(View.VISIBLE);
                 label.setText("Edit Weight");
+                dualNumberPickerRR.setVisibility(View.VISIBLE);
                 break;
             }
             case 5: {
-                dualNumberPickerRR.setVisibility(View.VISIBLE);
                 label.setText("Edit Height");
+                dualNumberPickerRR.setVisibility(View.VISIBLE);
+                firstNumberPicker.setMinValue(0);
+                firstNumberPicker.setMaxValue(valuesHeightFt.length-1);
+                firstNumberPicker.setDisplayedValues(valuesHeightFt);
+                firstNumberPicker.setWrapSelectorWheel(true);
+                secondNumberPicker.setMinValue(0);
+                secondNumberPicker.setMaxValue(valuesHeightInches.length-1);
+                secondNumberPicker.setDisplayedValues(valuesHeightInches);
+                secondNumberPicker.setWrapSelectorWheel(true);
+                firstNumberPicker.setOnValueChangedListener(new NumberPickerListener());
+                secondNumberPicker.setOnValueChangedListener(new NumberPickerListener());
                 break;
             }
             case 6: {
@@ -176,9 +199,9 @@ public class ChangeDetailsFragment extends DialogFragment {
                 }
                 case 2: {
                     if (updatedValue != -1) {
-                        currentUser.setSex(values[updatedValue]);
+                        currentUser.setSex(valuesSex[updatedValue]);
                     } else {
-                        currentUser.setSex(values[singleNumberPicker.getValue()]);
+                        currentUser.setSex(valuesSex[singleNumberPicker.getValue()]);
                     }
                     break;
                 }
@@ -195,7 +218,8 @@ public class ChangeDetailsFragment extends DialogFragment {
                     break;
                 }
                 case 5: {
-                    currentUser.setHeight(String.valueOf(updatedValue));
+                    String height = valuesHeightFt[firstNumberPicker.getValue()]+" "+valuesHeightInches[secondNumberPicker.getValue()];
+                    currentUser.setHeight(height);
                     break;
                 }
                 case 6: {

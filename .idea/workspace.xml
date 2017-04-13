@@ -22,8 +22,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/facebook/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" afterPath="$PROJECT_DIR$/WeightManagement/build/generated/source/r/debug/com/parse/starter/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" afterPath="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml" afterPath="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml" />
     </list>
     <manually-removed-from-ignored>
@@ -61,26 +59,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NavigationController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java">
+      <file leaf-file-name="fragment_change_details.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="206" column="105" selection-start-line="206" selection-start-column="105" selection-end-line="206" selection-end-column="105" />
+            <state relative-caret-position="222">
+              <caret line="118" column="75" selection-start-line="118" selection-start-column="75" selection-end-line="118" selection-end-column="75" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditDetailsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java">
+      <file leaf-file-name="ChangeDetailsFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
+            <state relative-caret-position="-427">
+              <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2011#2017#0" expanded="true" />
-                <element signature="e#6562#6563#0" expanded="true" />
-                <element signature="e#6608#6609#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2069,7 +2067,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/res/xml/bottombar_tabs.xml" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/TrainerViewController.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_trainer_view.xml" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_your_profile.xml" />
@@ -2116,10 +2113,11 @@
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/StaticList.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/Models/CurrentDetails.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/HomeViewFragment.java" />
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml" />
-        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java" />
         <option value="$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java" />
+        <option value="$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/MyProfilePictureView.java" />
       </list>
     </option>
   </component>
@@ -2154,7 +2152,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WeightManagement">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WeightManagement">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Parse-Starter-Project-1.13.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2172,6 +2200,10 @@
               <option name="myItemId" value="WeightManagement" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2183,12 +2215,30 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ViewControllers" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.13.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeightManagement" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2223,38 +2273,36 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.13.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="WeightManagement">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeightManagement" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="WeightManagement">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConfigClasses" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.13.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Parse-Starter-Project-1.13.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeightManagement" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2910,7 +2958,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492059892605</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Edits on list view">
+      <created>1492066051838</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1492066051838</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3008,7 +3063,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Beginning of FB authentication" />
     <MESSAGE value="Users can log in through fb" />
     <MESSAGE value="Fixed facebook issues" />
     <MESSAGE value="Minor UI Fixes" />
@@ -3033,7 +3087,8 @@
     <MESSAGE value="Fixed ignore file to stop tracking files that were already being tracked" />
     <MESSAGE value="Added home view now time to edit it" />
     <MESSAGE value="Added alot, done for tonight" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added alot, done for tonight" />
+    <MESSAGE value="Edits on list view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edits on list view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3042,13 +3097,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.14.1/a1abf32d3e378b2d7a77805863c18d0808a020ec/parse-android-1.14.1-sources.jar!/com/parse/ParseQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="1732" column="5" selection-start-line="1732" selection-start-column="5" selection-end-line="1732" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/Trainer.java" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3059,13 +3107,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/menu/menu_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/build.gradle">
@@ -3093,14 +3141,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/xml/bottombar_tabs.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/animator/slide_in_left.xml">
@@ -3146,24 +3194,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_your_profile.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
           <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/values/styles.xml">
@@ -3175,13 +3223,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_add_new_clients.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable-hdpi/ic_menu_button.png">
@@ -3190,32 +3238,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_current_details.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/tool_bar.xml">
-      <provider editor-type-id="android-designer2">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/tool_bar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable/border_line.xml">
@@ -3226,14 +3266,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/sandbox.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/drawable/border.xml">
@@ -3273,14 +3313,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/ParseAdapterCustomList.java">
@@ -3299,46 +3339,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/UserDetails.java" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/list_layout_edit_details.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/StaticList.java" />
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/list_layout_current_clients.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_current_clients.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_current_clients.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_edit_details.xml">
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/Models/CurrentDetails.java">
@@ -3352,22 +3381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
           <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-          <folding>
-            <element signature="e#2415#2416#0" expanded="false" />
-            <element signature="e#2452#2453#0" expanded="false" />
-            <element signature="method#getProfilePicture#0;class#User#0" expanded="false" />
-            <element signature="method#setProfilePicture#0;class#User#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_selected_user_details.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="80" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -3398,21 +3411,21 @@
         <state relative-caret-position="1904">
           <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
           <folding>
-            <element signature="e#5633#5838#0" expanded="true" />
-            <element signature="e#5837#5838#0" expanded="true" />
+            <element signature="e#5633#5838#0" expanded="false" />
+            <element signature="e#5837#5838#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/activity_navigation.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/HomeViewFragment.java">
@@ -3420,54 +3433,87 @@
         <state relative-caret-position="126">
           <caret line="103" column="56" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7657#8019#0" expanded="true" />
-            <element signature="e#8018#8019#0" expanded="true" />
-            <element signature="e#8168#8169#0" expanded="true" />
-            <element signature="e#8201#8202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2011#2017#0" expanded="true" />
-            <element signature="e#6562#6563#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/com/parse/starter/ViewControllers/NavigationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="17">
           <caret line="206" column="105" selection-start-line="206" selection-start-column="105" selection-end-line="206" selection-end-column="105" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_edit_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_selected_user_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/EditDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="181" column="10" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6562#6563#0" expanded="true" />
+            <element signature="e#6608#6609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/res/layout/fragment_change_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="118" column="75" selection-start-line="118" selection-start-column="75" selection-end-line="118" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/ConfigClasses/MyProfilePictureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightManagement/src/main/java/FragmentControllers/ChangeDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
