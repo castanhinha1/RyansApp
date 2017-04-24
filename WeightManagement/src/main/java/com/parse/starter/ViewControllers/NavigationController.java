@@ -31,6 +31,7 @@ import com.roughike.bottombar.OnTabSelectListener;
 
 import FragmentControllers.AddNewClientsOrTrainerFragment;
 import FragmentControllers.CalendarFragment;
+import FragmentControllers.CaloriesFragment;
 import FragmentControllers.ChangeDetailsFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
 import FragmentControllers.EditDetailsFragment;
@@ -160,9 +161,17 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
 
     @Override
     public void onRowSelected(int position) {
-        FragmentManager fm = getFragmentManager();
-        ChangeDetailsFragment changeDetailsFragment = ChangeDetailsFragment.newInstance(position);
-        changeDetailsFragment.show(fm, "fragment_selected_user");
+        if (position == 7){
+            CaloriesFragment caloriesFragment = new CaloriesFragment();
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, caloriesFragment);
+            fragmentTransaction.commit();
+        } else {
+            FragmentManager fm = getFragmentManager();
+            ChangeDetailsFragment changeDetailsFragment = ChangeDetailsFragment.newInstance(position);
+            changeDetailsFragment.show(fm, "fragment_selected_user");
+        }
 
     }
 

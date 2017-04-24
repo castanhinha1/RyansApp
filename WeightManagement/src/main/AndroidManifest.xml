@@ -54,8 +54,6 @@
         </activity>
         <activity android:name=".ViewControllers.SignUpController" />
         <activity android:name=".ViewControllers.NavigationController" />
-        <activity android:name=".ViewControllers.CurrentDetailsController" />
-        <activity android:name=".ViewControllers.HomeController" />
         <activity android:name=".ViewControllers.TrainerViewController" />
     </application>
 

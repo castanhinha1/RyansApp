@@ -2,9 +2,7 @@ package FragmentControllers;
 
 import android.app.DialogFragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,10 +20,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.starter.R;
-import com.parse.starter.ViewControllers.CurrentDetailsController;
-import com.parse.starter.ViewControllers.NavigationController;
 
-import Models.CurrentDetails;
 import Models.Relation;
 import Models.User;
 
@@ -176,8 +171,6 @@ public class ChangeDetailsFragment extends DialogFragment {
                 break;
             }
             case 7: {
-                Intent intent = new Intent(getActivity().getApplicationContext(), CurrentDetailsController.class);
-                startActivity(intent);
                 break;
             }
             case 8: {
