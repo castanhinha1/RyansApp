@@ -38,6 +38,8 @@ public class YourProfileFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_your_profile, container, false);
         //Find variable references
         currentUser = (User) ParseUser.getCurrentUser();
+        TextView titleTextView = (TextView) getActivity().findViewById(R.id.toolbar_title);
+        titleTextView.setText("Your Profile");
         profilepicture = (MyProfilePictureView) rootView.findViewById(R.id.profile_picture);
         nameTV = (TextView) rootView.findViewById(R.id.nameTV);
         locationTV = (TextView) rootView.findViewById(R.id.locationTV);

@@ -20,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CalendarView;
 import android.widget.ImageButton;
 
 import com.parse.ParseUser;
@@ -29,6 +30,7 @@ import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
 import FragmentControllers.AddNewClientsOrTrainerFragment;
+import FragmentControllers.CalendarFragment;
 import FragmentControllers.ChangeDetailsFragment;
 import FragmentControllers.CurrentClientsOrTrainerFragment;
 import FragmentControllers.EditDetailsFragment;
@@ -254,7 +256,20 @@ public class NavigationController extends AppCompatActivity implements CurrentCl
     }
 
     public void calendar(Bundle savedInstanceState){
-        Log.i("AppInfo", "Calendar Button Clicked");
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if (findViewById(R.id.fragment_container) != null) {
+            if (savedInstanceState != null) {
+                return;
+            }
+            // Create a new Fragment to be placed in the activity layout
+            CalendarFragment calendarFragment = new CalendarFragment();
+            // Add the fragment to the 'fragment_container' FrameLayout
+            fragmentTransaction
+                    .setCustomAnimations(R.animator.fade_in, R.animator.fade_out)
+                    .replace(R.id.fragment_container, calendarFragment)
+                    .commit();
+        }
     }
 
     public void trainer(Bundle savedInstanceState) {

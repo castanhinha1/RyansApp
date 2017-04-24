@@ -2,6 +2,7 @@ package FragmentControllers;
 
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -14,11 +15,18 @@ import android.widget.NumberPicker;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.parse.DeleteCallback;
+import com.parse.GetCallback;
 import com.parse.ParseException;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.starter.R;
+import com.parse.starter.ViewControllers.CurrentDetailsController;
+import com.parse.starter.ViewControllers.NavigationController;
 
+import Models.CurrentDetails;
+import Models.Relation;
 import Models.User;
 
 /**
@@ -107,7 +115,7 @@ public class ChangeDetailsFragment extends DialogFragment {
             case 0: {
                 photoRR.setVisibility(View.VISIBLE);
                 label.setText("Change Photo");
-                
+
                 break;
             }
             case 1: {
@@ -168,11 +176,33 @@ public class ChangeDetailsFragment extends DialogFragment {
                 break;
             }
             case 7: {
-                ///Relcaculate
+                Intent intent = new Intent(getActivity().getApplicationContext(), CurrentDetailsController.class);
+                startActivity(intent);
                 break;
             }
             case 8: {
                 //Show trainer view
+                ParseQuery<Relation> query = ParseQuery.getQuery(Relation.class);
+                query.whereEqualTo("trainer", currentUser);
+                query.getFirstInBackground(new GetCallback<Relation>() {
+                    @Override
+                    public void done(Relation object, ParseException e) {
+                        if (e == null) {
+                            object.deleteInBackground(new DeleteCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null){
+                                        Log.i("AppInfo", "Deleted");
+                                    } else {
+                                        Log.i("AppInfo", e.getMessage());
+                                    }
+                                }
+                            });
+                        } else {
+                            Log.i("AppInfo", e.getMessage());
+                        }
+                    }
+                });
                 break;
             }
         }

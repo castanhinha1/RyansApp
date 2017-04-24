@@ -111,7 +111,10 @@ public class CurrentDetailsController extends AppCompatActivity {
                 double userSexFactor = sexFactor;
                 double userDailyActvityMultiplier = dailyActivityMultplier;
                 BMRCalculator theBMRCalculator = new BMRCalculator(userWeightInLb, userBodyFat, userSexFactor, userDailyActvityMultiplier);
-                Intent intent = new Intent(getBaseContext(), HomeController.class);
+                currentUser.setBodyFat(String.valueOf(bodyFatTF.getText()));
+                currentUser.setWeight(String.valueOf(weightTF.getText()));
+                currentUser.saveInBackground();
+                Intent intent = new Intent(getBaseContext(), NavigationController.class);
                 startActivity(intent);
             }
         });
